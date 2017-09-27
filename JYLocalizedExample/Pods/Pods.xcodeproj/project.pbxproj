@@ -1,0 +1,1193 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0033878EE9668514ED5F0DB154779D31 /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D5D56C020C51097A79B694D96BDBE62B /* YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04E831CE165972E2ED23411F935EF001 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B941AC315E531198F14455C0DD0B0E8 /* Foundation.framework */; };
+		0B24207423C72DD6A5DEBBD387A95EBC /* POPBasicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AD1D05D521406867731730CE4861CEF /* POPBasicAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10158FE9FC2901B64E283AEAB7578DD4 /* POPCustomAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77D796EEAA60D0EBCFA9093702B11658 /* POPCustomAnimation.mm */; };
+		1258F1C3ED90D5C99DF32EC83BF07771 /* POPAnimationExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = CD711969520BF2788B5EAE6E43BA3FC5 /* POPAnimationExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12A325D24D8BF9B3848DD3220945FF58 /* POPMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C2F06DFCB34B69CB25662408340D7AE /* POPMath.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		14954CA40BD60FE6272EA34E8DB7D69E /* POPAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = B869231CB7FEB96481ADD86F42ECA7FE /* POPAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16D4F108DE765BA5A22AFFCB70DBF681 /* POPSpringAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE518C04D2D0BE362B0C9AEA63458B1D /* POPSpringAnimation.mm */; };
+		17C0BFC00B437D500F589A421BBB961F /* POPBasicAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 36BDD8299F3F9A3765EB4537E63E1F43 /* POPBasicAnimation.mm */; };
+		18797092EECD1305B240DF52BC9E2733 /* POPAnimatableProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DDFD01F574B79F1EDFEC44D8DCB2633 /* POPAnimatableProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0522ACF2781856CBA1500F7D1893CF /* CYLConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 76402AE3FF0350A1279B74234E8D6770 /* CYLConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CE7D9F532CE7C5FA00CAEBA1B34A47D /* POPCGUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6CF2C2A01ADD27D85FCC8792CBB8FB39 /* POPCGUtils.mm */; };
+		21A021F60E8C20404CB4C83487EF44E5 /* POPAnimationTracerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 47CCD496C6E480A7A504A8E379002E80 /* POPAnimationTracerInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		24DEAADAAAFB0B855EE56338BBD72691 /* POPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 345F43AD67FD9BE08F291AF4EC7B10DD /* POPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		290D10F76E6A8BF6C0A73684EDEA2049 /* POPSpringAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 78A99FF1AE18A55F21F1A7EFD22CB760 /* POPSpringAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		293FD05B980C59BF9525B36E5A483012 /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8545F8A92CC819350977D0E58F89613 /* YYModel-dummy.m */; };
+		2B0BA59D6EBFC3E30E6909EF85E97CD8 /* POPPropertyAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D5F32BF38B4B0636701C1B18C447373 /* POPPropertyAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2B7870D6549743111806158615E4171B /* POPVector.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A29A38495D2B879E968762EB68007E /* POPVector.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2DFC298C32620A3290A15FE1281A1C70 /* POPGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = D2340D48998E1AAEF8766A554794324A /* POPGeometry.mm */; };
+		2EE349B4F660220E7B52D02ECC1CF6B6 /* Pods-JYLocalizedExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886E5F35568C6A024D1BB58BC5CB07C /* Pods-JYLocalizedExample-dummy.m */; };
+		3B9958D3DDDD9D4A795803AE9DB74D5C /* POPAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC91F41E069C7FB7E6AFCA0D74EAE91 /* POPAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D9BB3D3508F92A878158549613BAFC2 /* UIControl+CYLTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B01C9D3904E8E460D33FD1A1BB22DFD /* UIControl+CYLTabBarControllerExtention.m */; };
+		3FE94431BB0B7C9F491F3558E29E7BD4 /* POPDecayAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7167A3853F7CAE93C8C720DADB70B005 /* POPDecayAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		40FB8E5D7CD0A4060C1A535F9B40129D /* POPAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0E8CB41E5F1EDEA63722D5E72EFF537 /* POPAnimator.mm */; };
+		44BC6B4C376EB66737791F2DE2C68EF5 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF5470A02991650B65ACC8AAE40C677 /* CoreFoundation.framework */; };
+		46E1FA1123C2BFF95F5C4EAC1884A7FD /* POPAnimationRuntime.mm in Sources */ = {isa = PBXBuildFile; fileRef = B65B303ECD7A85A40F30082E901C650C /* POPAnimationRuntime.mm */; };
+		4BB8278AD316A07C4A9C16C0C2CAF243 /* POPAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A6EA8F3AF62D5AD1EACB202840065A2 /* POPAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4DDC0E32A28CD1591AD5E935B8077B89 /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F4FF894E03C55353D328D2B46415966F /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5196923B219C3E7EE5F053FD01902E9E /* POPAnimatorPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = D2FA75B39A9840A6FCE64AAF31DB6CEC /* POPAnimatorPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5196CDA9CEF98D967331FC79BCC07823 /* FloatConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 783279A5AB77B666DD95595F1FF80095 /* FloatConversion.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5578BAF4914912FE6789B6860056597C /* TransformationMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 1523E2F8BB57CEDCAD2E28BD777DD936 /* TransformationMatrix.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		55DB4D1862257A13049733743F196D2D /* POPLayerExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E456265CCAE3F3EECFC5EC14C94666A /* POPLayerExtras.mm */; };
+		5EC4D72CE771B798EFE488ECFD0EFE8B /* POPAnimationEvent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 360AD898D99373949540143D35C6F9BB /* POPAnimationEvent.mm */; };
+		654CD7A049682F505589A68BF4F6A630 /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25EC68FD16BC7564DCAF235BECC4EC2C /* TransformationMatrix.cpp */; };
+		6765333B05A5050277EE107BCBC30AE6 /* POPDecayAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8911627C0FDCE6BED76FC3D047681B0D /* POPDecayAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67FF72471C06D54571607032DBBB78D5 /* POPAnimationExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA70B0ADE0E5CD1FADB89F3E5EC61466 /* POPAnimationExtras.mm */; };
+		6BE0A458487B359052749723A35D831C /* POPLayerExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 177D378B6C726993A79E3F632366DED5 /* POPLayerExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED2E9B80FE6206CF56B23C54FAC019 /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29451D1C1AEFBBBE626945D115BDE49E /* POPVector.mm */; };
+		71EAFD2140C40E8985F6D04A0816425B /* POPAnimationRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 694E087DBD3B4065E82D8F35D33FC5F2 /* POPAnimationRuntime.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7DBBB3B3B54837C0804F8DE1920954AA /* POP.h in Headers */ = {isa = PBXBuildFile; fileRef = F6AE506D80B1DC2915D2539702049B97 /* POP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DC5CA77E5F24BA12718684255E6B689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B941AC315E531198F14455C0DD0B0E8 /* Foundation.framework */; };
+		7E6A320338740CE439D7BA5AC3D8FB6E /* POPPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F48DFCF1BB523F6A2F3FC50728B4AEC /* POPPropertyAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FC9E94EA62AB8BA984B1C68C100C7B6 /* UnitBezier.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FDB263DF707648161FAA7328EB4735 /* UnitBezier.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		80921C3C88CA4C4E8D91167A7F46BBD8 /* POPCGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 361802D71D2294D76E1023F374A716E6 /* POPCGUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		82034B138880550EDDCB043D5AD6FA85 /* POPAnimationPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 545E99259D4330294A04031145192288 /* POPAnimationPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8C9338D4070AAE60C40C5EE238F0FEA1 /* UIViewController+CYLTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = B76361A232032573CA4A6D58ED34C7E6 /* UIViewController+CYLTabBarControllerExtention.m */; };
+		8D371CE2F2CCB2D27226EF12E36C93D7 /* POPPropertyAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = BAD43ABF27EB87106CAC54E3188CDEF7 /* POPPropertyAnimation.mm */; };
+		8DCA2D68B854BED4E5C4735796297A7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B941AC315E531198F14455C0DD0B0E8 /* Foundation.framework */; };
+		8F2DF6DC66C8AA7DB0598C25B554AF48 /* CYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36FE402F8EC920EFE328BF72DCD9565 /* CYLTabBarController.m */; };
+		911E181AB52B8256225D42536A483F27 /* POPAnimationTracer.h in Headers */ = {isa = PBXBuildFile; fileRef = F6644DCBFF48DD17FB0D57C1DB653F94 /* POPAnimationTracer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		962E80E487219C20ECFF203A8648AEEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B941AC315E531198F14455C0DD0B0E8 /* Foundation.framework */; };
+		97873F1496501F5095B0A4467BBED93D /* POPAnimationEventInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7052AFC8BCCDD4F845D19C9A5BFF0891 /* POPAnimationEventInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9CB8CDC7B89DBFC7B4E9FF289E690DBE /* UIViewController+CYLTabBarControllerExtention.h in Headers */ = {isa = PBXBuildFile; fileRef = 318CE0F6E83101B25DFA7B43DCD17EC7 /* UIViewController+CYLTabBarControllerExtention.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EB91B8F2C304AFF9C1EA24FCD3015A4 /* POPAnimatablePropertyTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B1299CC8C8B65398817D96198038F0 /* POPAnimatablePropertyTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A00691F267F530DBA5234453D19CF2B9 /* POPSpringSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = E3670350352ECA00CB9485B4D77C44B1 /* POPSpringSolver.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A67A37E59E2CAB0161C9C99DC1D8A7BB /* POPAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 37686B25B3E446E706F474C776EB6B94 /* POPAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AADD794EE358A7D55FAFD5FE66FCA873 /* POPAnimationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 02AEDC148A6787B85DFFB3AF9DAA55B8 /* POPAnimationEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF98613A2E16B158F083A50CACACACB8 /* CYLTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = D8FD6221266B8EAE2F2EC16017D4937A /* CYLTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B16379B3E3B093734FD62D2FBED468E9 /* POPCustomAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = B0263116105C782BCAC65F150A9F6BB8 /* POPCustomAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B61F21CB5C3DD07BDD29FEEE1D7D905E /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAB7303D9843CCB17E771CEDE8A7D9 /* NSObject+YYModel.m */; };
+		B88AF89F82C021AC5DA9D180356A7213 /* UITabBarItem+CYLTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = B36EE116DD968C890D230D034BC4625A /* UITabBarItem+CYLTabBarControllerExtention.m */; };
+		BAB35412B2D1DBD2CD02975B343FC7D4 /* POPSpringAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4610D0EEE46C77BB53B44A2FC92070F0 /* POPSpringAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BCC810F4BF3C8431FF04B44BA7010E30 /* CYLPlusButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9B42C6A9C8B25AD1099260FB9FD956 /* CYLPlusButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE99DB815F3C619239DE9F5727345067 /* POPAnimatableProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2EDDB16D1697090A5EB3E0F6245EBAC8 /* POPAnimatableProperty.mm */; };
+		BED3C0208A5765F74BFBA9295DEDEDD9 /* UIView+CYLTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DE987CAEE9EA018DA443FB2A19AD7F /* UIView+CYLTabBarControllerExtention.m */; };
+		C176A23166E147849485E017AEAFE889 /* UITabBarItem+CYLTabBarControllerExtention.h in Headers */ = {isa = PBXBuildFile; fileRef = FB3421967D042FF8C64D18BB176099E0 /* UITabBarItem+CYLTabBarControllerExtention.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C52351C4C5A76291EE49B6A4BEE84772 /* POPDecayAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AF183759E1B77B5711DBFC0BE2193D9 /* POPDecayAnimation.mm */; };
+		C8E2258C6B73F63B855DF64F69F9066B /* POPAnimationTracer.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEDF8BB8B31C068F645003AB62851523 /* POPAnimationTracer.mm */; };
+		CBF357450ECA5E02619EEB51C674777F /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FB700F4507FCCD756B74786E4DAC8C56 /* CYLPlusButton.m */; };
+		CC5FF31296C12F914659BB5A75504D8F /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68153CEAE9A744C8E312A4F33DBD695C /* YYClassInfo.m */; };
+		CF6B9816217F7E4C97B7D1B3711D5AD0 /* JYRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAD1EF3A4582C1296363827505EAB7E /* JYRouter-dummy.m */; };
+		DF7DC14F53095A00ED8B9D8E1012092E /* JYRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = EE6AA5B3E0572C953880A206F633612F /* JYRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E13F1975BF0A297A6C85CAEB45089EB7 /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A4DC8706E3FF855DDAA5A824BD81BA /* CYLTabBar.m */; };
+		E25B1BADFD408EC752C7295C16CBAE14 /* UIControl+CYLTabBarControllerExtention.h in Headers */ = {isa = PBXBuildFile; fileRef = 840A5935166115B9EF141B340AF58632 /* UIControl+CYLTabBarControllerExtention.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E29EAC3768E043B012D7F9C7FDBF13C9 /* CYLTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 776A70A8A0586FA5F664C2C0F40B0287 /* CYLTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2EB975C96357EB7E585D9BCF5811B8C /* POPBasicAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = B11FB47C7B3B2D9EE9F30B7C3B6C97D4 /* POPBasicAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB8CAF8E4FA09E84963EA141262830CA /* JYRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 580A2729E27ACB600BDB34E8D8D0E50A /* JYRouter.m */; };
+		EC42104464D7D3394F5843296D83A221 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B941AC315E531198F14455C0DD0B0E8 /* Foundation.framework */; };
+		EE83BA5301F837B28824D55AF9C1DA53 /* POPMath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9102ED545D167AEE3FAF4757AC8200B1 /* POPMath.mm */; };
+		EEC5B4B07B961E37F32DF019E0C3B69E /* UIView+CYLTabBarControllerExtention.h in Headers */ = {isa = PBXBuildFile; fileRef = D74BE33DB32F7E779B9F96ACC188A7E1 /* UIView+CYLTabBarControllerExtention.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F19D3300B15992369039245BBCDF7450 /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DF59BA72B28A581143A3B65DA11B60F5 /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2EFCB7072B045B6098F21736780ED74 /* CYLTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FC685166285CB7ADFFC4F5304173A8 /* CYLTabBarController-dummy.m */; };
+		F38E4928E0F7B053E1A09B18A53609F6 /* POPGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = EBBF5BF70519AE87BC185E98DCFCA47E /* POPGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F407766C4BC0BDFB4D83B92B1CA53BB8 /* pop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C063499AE62A072D6825DFFEDF459E0 /* pop-dummy.m */; };
+		FF331FBF4C86C9B4406D9B1155F9FD31 /* POPAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3F23BD425CCFFA7C22C299A16882DC3E /* POPAnimation.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		063647099662907A4CB5CC08B9BDC87F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D9E2868491D1ACA24B1A3716C1B268B;
+			remoteInfo = JYRouter;
+		};
+		604F8157FDC175F3A8AE08D158430A66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27883E64A3D973B97C14634604592BDD;
+			remoteInfo = pop;
+		};
+		A55F825EF6ECD4714D866487A70D51AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 272B6902EC233437C8C814A53CD3E70D;
+			remoteInfo = CYLTabBarController;
+		};
+		F78FB101A3ECA84A9DD1FC11A336A9C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62BB3377375546AA855C592025BA7DFC;
+			remoteInfo = YYModel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02AEDC148A6787B85DFFB3AF9DAA55B8 /* POPAnimationEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEvent.h; path = pop/POPAnimationEvent.h; sourceTree = "<group>"; };
+		03ED4FEE311E37D30501FD9E239B4D85 /* pop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = pop.xcconfig; sourceTree = "<group>"; };
+		0B01C9D3904E8E460D33FD1A1BB22DFD /* UIControl+CYLTabBarControllerExtention.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+CYLTabBarControllerExtention.m"; path = "CYLTabBarController/UIControl+CYLTabBarControllerExtention.m"; sourceTree = "<group>"; };
+		0D7506300E60D539BF23FB035A75B0ED /* libCYLTabBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCYLTabBarController.a; path = libCYLTabBarController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DFAB7303D9843CCB17E771CEDE8A7D9 /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
+		1523E2F8BB57CEDCAD2E28BD777DD936 /* TransformationMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TransformationMatrix.h; path = pop/WebCore/TransformationMatrix.h; sourceTree = "<group>"; };
+		177D378B6C726993A79E3F632366DED5 /* POPLayerExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPLayerExtras.h; path = pop/POPLayerExtras.h; sourceTree = "<group>"; };
+		1AF183759E1B77B5711DBFC0BE2193D9 /* POPDecayAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPDecayAnimation.mm; path = pop/POPDecayAnimation.mm; sourceTree = "<group>"; };
+		1AFCEE7A38594A6CB596EBC5FEB8A20D /* Pods-JYLocalizedExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JYLocalizedExample.debug.xcconfig"; sourceTree = "<group>"; };
+		1C1BFF08F69E99E40660AD7074E5A471 /* JYRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JYRouter-prefix.pch"; sourceTree = "<group>"; };
+		1DDFD01F574B79F1EDFEC44D8DCB2633 /* POPAnimatableProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatableProperty.h; path = pop/POPAnimatableProperty.h; sourceTree = "<group>"; };
+		25EC68FD16BC7564DCAF235BECC4EC2C /* TransformationMatrix.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = TransformationMatrix.cpp; path = pop/WebCore/TransformationMatrix.cpp; sourceTree = "<group>"; };
+		2843B904EC398D9266FC8ED6C4B7FD67 /* CYLTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CYLTabBarController.xcconfig; sourceTree = "<group>"; };
+		2943CA4547C1A45A2508E76B8C2C7F21 /* libYYModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYModel.a; path = libYYModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		29451D1C1AEFBBBE626945D115BDE49E /* POPVector.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPVector.mm; path = pop/POPVector.mm; sourceTree = "<group>"; };
+		2C9812DBAFC1BE7CB5CF79ADE0321241 /* Pods-JYLocalizedExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JYLocalizedExample.release.xcconfig"; sourceTree = "<group>"; };
+		2EDDB16D1697090A5EB3E0F6245EBAC8 /* POPAnimatableProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimatableProperty.mm; path = pop/POPAnimatableProperty.mm; sourceTree = "<group>"; };
+		318CE0F6E83101B25DFA7B43DCD17EC7 /* UIViewController+CYLTabBarControllerExtention.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+CYLTabBarControllerExtention.h"; path = "CYLTabBarController/UIViewController+CYLTabBarControllerExtention.h"; sourceTree = "<group>"; };
+		345F43AD67FD9BE08F291AF4EC7B10DD /* POPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDefines.h; path = pop/POPDefines.h; sourceTree = "<group>"; };
+		360AD898D99373949540143D35C6F9BB /* POPAnimationEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationEvent.mm; path = pop/POPAnimationEvent.mm; sourceTree = "<group>"; };
+		361802D71D2294D76E1023F374A716E6 /* POPCGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCGUtils.h; path = pop/POPCGUtils.h; sourceTree = "<group>"; };
+		36BDD8299F3F9A3765EB4537E63E1F43 /* POPBasicAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPBasicAnimation.mm; path = pop/POPBasicAnimation.mm; sourceTree = "<group>"; };
+		37686B25B3E446E706F474C776EB6B94 /* POPAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAction.h; path = pop/POPAction.h; sourceTree = "<group>"; };
+		3A5771030F80BDD52813257EC440C219 /* YYModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.xcconfig; sourceTree = "<group>"; };
+		3F23BD425CCFFA7C22C299A16882DC3E /* POPAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimation.mm; path = pop/POPAnimation.mm; sourceTree = "<group>"; };
+		3F48DFCF1BB523F6A2F3FC50728B4AEC /* POPPropertyAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimation.h; path = pop/POPPropertyAnimation.h; sourceTree = "<group>"; };
+		4610D0EEE46C77BB53B44A2FC92070F0 /* POPSpringAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimationInternal.h; path = pop/POPSpringAnimationInternal.h; sourceTree = "<group>"; };
+		47CCD496C6E480A7A504A8E379002E80 /* POPAnimationTracerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracerInternal.h; path = pop/POPAnimationTracerInternal.h; sourceTree = "<group>"; };
+		4886E5F35568C6A024D1BB58BC5CB07C /* Pods-JYLocalizedExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JYLocalizedExample-dummy.m"; sourceTree = "<group>"; };
+		4C063499AE62A072D6825DFFEDF459E0 /* pop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "pop-dummy.m"; sourceTree = "<group>"; };
+		505CB1F2B52DCAAEC60E9B9C1572ADA8 /* CYLTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CYLTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		545E99259D4330294A04031145192288 /* POPAnimationPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationPrivate.h; path = pop/POPAnimationPrivate.h; sourceTree = "<group>"; };
+		580A2729E27ACB600BDB34E8D8D0E50A /* JYRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JYRouter.m; path = JYRouter/JYRouter.m; sourceTree = "<group>"; };
+		60B1299CC8C8B65398817D96198038F0 /* POPAnimatablePropertyTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatablePropertyTypes.h; path = pop/POPAnimatablePropertyTypes.h; sourceTree = "<group>"; };
+		68153CEAE9A744C8E312A4F33DBD695C /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
+		694E087DBD3B4065E82D8F35D33FC5F2 /* POPAnimationRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationRuntime.h; path = pop/POPAnimationRuntime.h; sourceTree = "<group>"; };
+		6AD1D05D521406867731730CE4861CEF /* POPBasicAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimation.h; path = pop/POPBasicAnimation.h; sourceTree = "<group>"; };
+		6CF2C2A01ADD27D85FCC8792CBB8FB39 /* POPCGUtils.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPCGUtils.mm; path = pop/POPCGUtils.mm; sourceTree = "<group>"; };
+		6E456265CCAE3F3EECFC5EC14C94666A /* POPLayerExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPLayerExtras.mm; path = pop/POPLayerExtras.mm; sourceTree = "<group>"; };
+		7052AFC8BCCDD4F845D19C9A5BFF0891 /* POPAnimationEventInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEventInternal.h; path = pop/POPAnimationEventInternal.h; sourceTree = "<group>"; };
+		7167A3853F7CAE93C8C720DADB70B005 /* POPDecayAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimationInternal.h; path = pop/POPDecayAnimationInternal.h; sourceTree = "<group>"; };
+		76402AE3FF0350A1279B74234E8D6770 /* CYLConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYLConstants.h; path = CYLTabBarController/CYLConstants.h; sourceTree = "<group>"; };
+		776A70A8A0586FA5F664C2C0F40B0287 /* CYLTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYLTabBarController.h; path = CYLTabBarController/CYLTabBarController.h; sourceTree = "<group>"; };
+		77D796EEAA60D0EBCFA9093702B11658 /* POPCustomAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPCustomAnimation.mm; path = pop/POPCustomAnimation.mm; sourceTree = "<group>"; };
+		783279A5AB77B666DD95595F1FF80095 /* FloatConversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FloatConversion.h; path = pop/WebCore/FloatConversion.h; sourceTree = "<group>"; };
+		78A99FF1AE18A55F21F1A7EFD22CB760 /* POPSpringAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimation.h; path = pop/POPSpringAnimation.h; sourceTree = "<group>"; };
+		7C2F06DFCB34B69CB25662408340D7AE /* POPMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPMath.h; path = pop/POPMath.h; sourceTree = "<group>"; };
+		80FC685166285CB7ADFFC4F5304173A8 /* CYLTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CYLTabBarController-dummy.m"; sourceTree = "<group>"; };
+		840A5935166115B9EF141B340AF58632 /* UIControl+CYLTabBarControllerExtention.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+CYLTabBarControllerExtention.h"; path = "CYLTabBarController/UIControl+CYLTabBarControllerExtention.h"; sourceTree = "<group>"; };
+		8798DE3D9D50ACE4A02A444EBA5B1EBD /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
+		8911627C0FDCE6BED76FC3D047681B0D /* POPDecayAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimation.h; path = pop/POPDecayAnimation.h; sourceTree = "<group>"; };
+		8A52ABE91DAB1CB002476795F512C768 /* Pods-JYLocalizedExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JYLocalizedExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		8B941AC315E531198F14455C0DD0B0E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8D5F32BF38B4B0636701C1B18C447373 /* POPPropertyAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimationInternal.h; path = pop/POPPropertyAnimationInternal.h; sourceTree = "<group>"; };
+		8EF5470A02991650B65ACC8AAE40C677 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		8FC91F41E069C7FB7E6AFCA0D74EAE91 /* POPAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimation.h; path = pop/POPAnimation.h; sourceTree = "<group>"; };
+		9102ED545D167AEE3FAF4757AC8200B1 /* POPMath.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPMath.mm; path = pop/POPMath.mm; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A6EA8F3AF62D5AD1EACB202840065A2 /* POPAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationInternal.h; path = pop/POPAnimationInternal.h; sourceTree = "<group>"; };
+		9AAD1EF3A4582C1296363827505EAB7E /* JYRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JYRouter-dummy.m"; sourceTree = "<group>"; };
+		9CDD2BF0C26BB0090613155B28BDA782 /* JYRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JYRouter.xcconfig; sourceTree = "<group>"; };
+		A0E8CB41E5F1EDEA63722D5E72EFF537 /* POPAnimator.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimator.mm; path = pop/POPAnimator.mm; sourceTree = "<group>"; };
+		A1DE987CAEE9EA018DA443FB2A19AD7F /* UIView+CYLTabBarControllerExtention.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+CYLTabBarControllerExtention.m"; path = "CYLTabBarController/UIView+CYLTabBarControllerExtention.m"; sourceTree = "<group>"; };
+		A36FE402F8EC920EFE328BF72DCD9565 /* CYLTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CYLTabBarController.m; path = CYLTabBarController/CYLTabBarController.m; sourceTree = "<group>"; };
+		ABAB6A90F688FD4620D5B9946CC3AD04 /* libPods-JYLocalizedExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JYLocalizedExample.a"; path = "libPods-JYLocalizedExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC65DD265E98DB836830BDC151767104 /* Pods-JYLocalizedExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JYLocalizedExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AC7D23C3E159CE2A80F4E78109B9C2E5 /* Pods-JYLocalizedExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JYLocalizedExample-resources.sh"; sourceTree = "<group>"; };
+		B0263116105C782BCAC65F150A9F6BB8 /* POPCustomAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCustomAnimation.h; path = pop/POPCustomAnimation.h; sourceTree = "<group>"; };
+		B11FB47C7B3B2D9EE9F30B7C3B6C97D4 /* POPBasicAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimationInternal.h; path = pop/POPBasicAnimationInternal.h; sourceTree = "<group>"; };
+		B36EE116DD968C890D230D034BC4625A /* UITabBarItem+CYLTabBarControllerExtention.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITabBarItem+CYLTabBarControllerExtention.m"; path = "CYLTabBarController/UITabBarItem+CYLTabBarControllerExtention.m"; sourceTree = "<group>"; };
+		B65B303ECD7A85A40F30082E901C650C /* POPAnimationRuntime.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationRuntime.mm; path = pop/POPAnimationRuntime.mm; sourceTree = "<group>"; };
+		B76361A232032573CA4A6D58ED34C7E6 /* UIViewController+CYLTabBarControllerExtention.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+CYLTabBarControllerExtention.m"; path = "CYLTabBarController/UIViewController+CYLTabBarControllerExtention.m"; sourceTree = "<group>"; };
+		B869231CB7FEB96481ADD86F42ECA7FE /* POPAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimator.h; path = pop/POPAnimator.h; sourceTree = "<group>"; };
+		BAD43ABF27EB87106CAC54E3188CDEF7 /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPPropertyAnimation.mm; path = pop/POPPropertyAnimation.mm; sourceTree = "<group>"; };
+		C4A4DC8706E3FF855DDAA5A824BD81BA /* CYLTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CYLTabBar.m; path = CYLTabBarController/CYLTabBar.m; sourceTree = "<group>"; };
+		CD711969520BF2788B5EAE6E43BA3FC5 /* POPAnimationExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationExtras.h; path = pop/POPAnimationExtras.h; sourceTree = "<group>"; };
+		CFB7CAEF3EF6EDFAFF990785306DC836 /* Pods-JYLocalizedExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JYLocalizedExample-frameworks.sh"; sourceTree = "<group>"; };
+		D2340D48998E1AAEF8766A554794324A /* POPGeometry.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPGeometry.mm; path = pop/POPGeometry.mm; sourceTree = "<group>"; };
+		D2FA75B39A9840A6FCE64AAF31DB6CEC /* POPAnimatorPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatorPrivate.h; path = pop/POPAnimatorPrivate.h; sourceTree = "<group>"; };
+		D5D56C020C51097A79B694D96BDBE62B /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
+		D5E14B1D173C13A884137DFA1570E104 /* libpop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libpop.a; path = libpop.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D74BE33DB32F7E779B9F96ACC188A7E1 /* UIView+CYLTabBarControllerExtention.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+CYLTabBarControllerExtention.h"; path = "CYLTabBarController/UIView+CYLTabBarControllerExtention.h"; sourceTree = "<group>"; };
+		D8545F8A92CC819350977D0E58F89613 /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
+		D8FD6221266B8EAE2F2EC16017D4937A /* CYLTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYLTabBar.h; path = CYLTabBarController/CYLTabBar.h; sourceTree = "<group>"; };
+		DA70B0ADE0E5CD1FADB89F3E5EC61466 /* POPAnimationExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationExtras.mm; path = pop/POPAnimationExtras.mm; sourceTree = "<group>"; };
+		DD9B42C6A9C8B25AD1099260FB9FD956 /* CYLPlusButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYLPlusButton.h; path = CYLTabBarController/CYLPlusButton.h; sourceTree = "<group>"; };
+		DE518C04D2D0BE362B0C9AEA63458B1D /* POPSpringAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPSpringAnimation.mm; path = pop/POPSpringAnimation.mm; sourceTree = "<group>"; };
+		DF59BA72B28A581143A3B65DA11B60F5 /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
+		E01E4C65410A7415BBDB46003C6253A4 /* pop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pop-prefix.pch"; sourceTree = "<group>"; };
+		E3670350352ECA00CB9485B4D77C44B1 /* POPSpringSolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringSolver.h; path = pop/POPSpringSolver.h; sourceTree = "<group>"; };
+		E8CA1230007034B3DA17306A14E02D71 /* libJYRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJYRouter.a; path = libJYRouter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBBF5BF70519AE87BC185E98DCFCA47E /* POPGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPGeometry.h; path = pop/POPGeometry.h; sourceTree = "<group>"; };
+		EE6AA5B3E0572C953880A206F633612F /* JYRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JYRouter.h; path = JYRouter/JYRouter.h; sourceTree = "<group>"; };
+		F4FF894E03C55353D328D2B46415966F /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
+		F5FDB263DF707648161FAA7328EB4735 /* UnitBezier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UnitBezier.h; path = pop/WebCore/UnitBezier.h; sourceTree = "<group>"; };
+		F6644DCBFF48DD17FB0D57C1DB653F94 /* POPAnimationTracer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracer.h; path = pop/POPAnimationTracer.h; sourceTree = "<group>"; };
+		F6AE506D80B1DC2915D2539702049B97 /* POP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POP.h; path = pop/POP.h; sourceTree = "<group>"; };
+		F7A29A38495D2B879E968762EB68007E /* POPVector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPVector.h; path = pop/POPVector.h; sourceTree = "<group>"; };
+		FB3421967D042FF8C64D18BB176099E0 /* UITabBarItem+CYLTabBarControllerExtention.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBarItem+CYLTabBarControllerExtention.h"; path = "CYLTabBarController/UITabBarItem+CYLTabBarControllerExtention.h"; sourceTree = "<group>"; };
+		FB700F4507FCCD756B74786E4DAC8C56 /* CYLPlusButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CYLPlusButton.m; path = CYLTabBarController/CYLPlusButton.m; sourceTree = "<group>"; };
+		FEDF8BB8B31C068F645003AB62851523 /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6797EE802466FB38B4E3401FAE2E5B6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC42104464D7D3394F5843296D83A221 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A329EC81E3D040E185373DE44948DDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DCA2D68B854BED4E5C4735796297A7E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B31C9CDC9A15700F8E48EB14C614B0C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E831CE165972E2ED23411F935EF001 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D349FCF9B001A0D6123E3833996473 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44BC6B4C376EB66737791F2DE2C68EF5 /* CoreFoundation.framework in Frameworks */,
+				962E80E487219C20ECFF203A8648AEEF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85178E02326258BE5726FE8CDAA397D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DC5CA77E5F24BA12718684255E6B689 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06BC4E0A9665A155FE7326CE9B0EF734 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABBBF8AE8DB11A9A137E2036E0C8C95E /* Pods-JYLocalizedExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0EB10B7A1CD54BD25F40C988BD5C33CB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8EF5470A02991650B65ACC8AAE40C677 /* CoreFoundation.framework */,
+				8B941AC315E531198F14455C0DD0B0E8 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		175890AA364E37ACF8DEBD09D81E3C02 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CDD2BF0C26BB0090613155B28BDA782 /* JYRouter.xcconfig */,
+				9AAD1EF3A4582C1296363827505EAB7E /* JYRouter-dummy.m */,
+				1C1BFF08F69E99E40660AD7074E5A471 /* JYRouter-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JYRouter";
+			sourceTree = "<group>";
+		};
+		1C3376B368D5B058AF3070D06C60A608 /* CYLTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				76402AE3FF0350A1279B74234E8D6770 /* CYLConstants.h */,
+				DD9B42C6A9C8B25AD1099260FB9FD956 /* CYLPlusButton.h */,
+				FB700F4507FCCD756B74786E4DAC8C56 /* CYLPlusButton.m */,
+				D8FD6221266B8EAE2F2EC16017D4937A /* CYLTabBar.h */,
+				C4A4DC8706E3FF855DDAA5A824BD81BA /* CYLTabBar.m */,
+				776A70A8A0586FA5F664C2C0F40B0287 /* CYLTabBarController.h */,
+				A36FE402F8EC920EFE328BF72DCD9565 /* CYLTabBarController.m */,
+				840A5935166115B9EF141B340AF58632 /* UIControl+CYLTabBarControllerExtention.h */,
+				0B01C9D3904E8E460D33FD1A1BB22DFD /* UIControl+CYLTabBarControllerExtention.m */,
+				FB3421967D042FF8C64D18BB176099E0 /* UITabBarItem+CYLTabBarControllerExtention.h */,
+				B36EE116DD968C890D230D034BC4625A /* UITabBarItem+CYLTabBarControllerExtention.m */,
+				D74BE33DB32F7E779B9F96ACC188A7E1 /* UIView+CYLTabBarControllerExtention.h */,
+				A1DE987CAEE9EA018DA443FB2A19AD7F /* UIView+CYLTabBarControllerExtention.m */,
+				318CE0F6E83101B25DFA7B43DCD17EC7 /* UIViewController+CYLTabBarControllerExtention.h */,
+				B76361A232032573CA4A6D58ED34C7E6 /* UIViewController+CYLTabBarControllerExtention.m */,
+				38CBBD5EC8729080C7679FF9C401DCE3 /* Support Files */,
+			);
+			name = CYLTabBarController;
+			path = CYLTabBarController;
+			sourceTree = "<group>";
+		};
+		24FBADEEFAFE9AF841186B1B077F57D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A5771030F80BDD52813257EC440C219 /* YYModel.xcconfig */,
+				D8545F8A92CC819350977D0E58F89613 /* YYModel-dummy.m */,
+				8798DE3D9D50ACE4A02A444EBA5B1EBD /* YYModel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YYModel";
+			sourceTree = "<group>";
+		};
+		38CBBD5EC8729080C7679FF9C401DCE3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2843B904EC398D9266FC8ED6C4B7FD67 /* CYLTabBarController.xcconfig */,
+				80FC685166285CB7ADFFC4F5304173A8 /* CYLTabBarController-dummy.m */,
+				505CB1F2B52DCAAEC60E9B9C1572ADA8 /* CYLTabBarController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CYLTabBarController";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EB10B7A1CD54BD25F40C988BD5C33CB /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D5FB71D848B8D6CD781931090138E69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C3376B368D5B058AF3070D06C60A608 /* CYLTabBarController */,
+				B5373B42ECC18B66A9893DDFA001A5FE /* JYRouter */,
+				C070998C7EDA5E198EF180370037A0D6 /* pop */,
+				D2C2DF79751C5A706A28063A71F40147 /* YYModel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				5D5FB71D848B8D6CD781931090138E69 /* Pods */,
+				C66EB5536640AB60D111898C406BD08C /* Products */,
+				06BC4E0A9665A155FE7326CE9B0EF734 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		84A7D9C06166312E615B086626E39C33 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				03ED4FEE311E37D30501FD9E239B4D85 /* pop.xcconfig */,
+				4C063499AE62A072D6825DFFEDF459E0 /* pop-dummy.m */,
+				E01E4C65410A7415BBDB46003C6253A4 /* pop-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/pop";
+			sourceTree = "<group>";
+		};
+		ABBBF8AE8DB11A9A137E2036E0C8C95E /* Pods-JYLocalizedExample */ = {
+			isa = PBXGroup;
+			children = (
+				AC65DD265E98DB836830BDC151767104 /* Pods-JYLocalizedExample-acknowledgements.markdown */,
+				8A52ABE91DAB1CB002476795F512C768 /* Pods-JYLocalizedExample-acknowledgements.plist */,
+				4886E5F35568C6A024D1BB58BC5CB07C /* Pods-JYLocalizedExample-dummy.m */,
+				CFB7CAEF3EF6EDFAFF990785306DC836 /* Pods-JYLocalizedExample-frameworks.sh */,
+				AC7D23C3E159CE2A80F4E78109B9C2E5 /* Pods-JYLocalizedExample-resources.sh */,
+				1AFCEE7A38594A6CB596EBC5FEB8A20D /* Pods-JYLocalizedExample.debug.xcconfig */,
+				2C9812DBAFC1BE7CB5CF79ADE0321241 /* Pods-JYLocalizedExample.release.xcconfig */,
+			);
+			name = "Pods-JYLocalizedExample";
+			path = "Target Support Files/Pods-JYLocalizedExample";
+			sourceTree = "<group>";
+		};
+		B5373B42ECC18B66A9893DDFA001A5FE /* JYRouter */ = {
+			isa = PBXGroup;
+			children = (
+				EE6AA5B3E0572C953880A206F633612F /* JYRouter.h */,
+				580A2729E27ACB600BDB34E8D8D0E50A /* JYRouter.m */,
+				175890AA364E37ACF8DEBD09D81E3C02 /* Support Files */,
+			);
+			name = JYRouter;
+			path = JYRouter;
+			sourceTree = "<group>";
+		};
+		C070998C7EDA5E198EF180370037A0D6 /* pop */ = {
+			isa = PBXGroup;
+			children = (
+				783279A5AB77B666DD95595F1FF80095 /* FloatConversion.h */,
+				F6AE506D80B1DC2915D2539702049B97 /* POP.h */,
+				37686B25B3E446E706F474C776EB6B94 /* POPAction.h */,
+				1DDFD01F574B79F1EDFEC44D8DCB2633 /* POPAnimatableProperty.h */,
+				2EDDB16D1697090A5EB3E0F6245EBAC8 /* POPAnimatableProperty.mm */,
+				60B1299CC8C8B65398817D96198038F0 /* POPAnimatablePropertyTypes.h */,
+				8FC91F41E069C7FB7E6AFCA0D74EAE91 /* POPAnimation.h */,
+				3F23BD425CCFFA7C22C299A16882DC3E /* POPAnimation.mm */,
+				02AEDC148A6787B85DFFB3AF9DAA55B8 /* POPAnimationEvent.h */,
+				360AD898D99373949540143D35C6F9BB /* POPAnimationEvent.mm */,
+				7052AFC8BCCDD4F845D19C9A5BFF0891 /* POPAnimationEventInternal.h */,
+				CD711969520BF2788B5EAE6E43BA3FC5 /* POPAnimationExtras.h */,
+				DA70B0ADE0E5CD1FADB89F3E5EC61466 /* POPAnimationExtras.mm */,
+				9A6EA8F3AF62D5AD1EACB202840065A2 /* POPAnimationInternal.h */,
+				545E99259D4330294A04031145192288 /* POPAnimationPrivate.h */,
+				694E087DBD3B4065E82D8F35D33FC5F2 /* POPAnimationRuntime.h */,
+				B65B303ECD7A85A40F30082E901C650C /* POPAnimationRuntime.mm */,
+				F6644DCBFF48DD17FB0D57C1DB653F94 /* POPAnimationTracer.h */,
+				FEDF8BB8B31C068F645003AB62851523 /* POPAnimationTracer.mm */,
+				47CCD496C6E480A7A504A8E379002E80 /* POPAnimationTracerInternal.h */,
+				B869231CB7FEB96481ADD86F42ECA7FE /* POPAnimator.h */,
+				A0E8CB41E5F1EDEA63722D5E72EFF537 /* POPAnimator.mm */,
+				D2FA75B39A9840A6FCE64AAF31DB6CEC /* POPAnimatorPrivate.h */,
+				6AD1D05D521406867731730CE4861CEF /* POPBasicAnimation.h */,
+				36BDD8299F3F9A3765EB4537E63E1F43 /* POPBasicAnimation.mm */,
+				B11FB47C7B3B2D9EE9F30B7C3B6C97D4 /* POPBasicAnimationInternal.h */,
+				361802D71D2294D76E1023F374A716E6 /* POPCGUtils.h */,
+				6CF2C2A01ADD27D85FCC8792CBB8FB39 /* POPCGUtils.mm */,
+				B0263116105C782BCAC65F150A9F6BB8 /* POPCustomAnimation.h */,
+				77D796EEAA60D0EBCFA9093702B11658 /* POPCustomAnimation.mm */,
+				8911627C0FDCE6BED76FC3D047681B0D /* POPDecayAnimation.h */,
+				1AF183759E1B77B5711DBFC0BE2193D9 /* POPDecayAnimation.mm */,
+				7167A3853F7CAE93C8C720DADB70B005 /* POPDecayAnimationInternal.h */,
+				345F43AD67FD9BE08F291AF4EC7B10DD /* POPDefines.h */,
+				EBBF5BF70519AE87BC185E98DCFCA47E /* POPGeometry.h */,
+				D2340D48998E1AAEF8766A554794324A /* POPGeometry.mm */,
+				177D378B6C726993A79E3F632366DED5 /* POPLayerExtras.h */,
+				6E456265CCAE3F3EECFC5EC14C94666A /* POPLayerExtras.mm */,
+				7C2F06DFCB34B69CB25662408340D7AE /* POPMath.h */,
+				9102ED545D167AEE3FAF4757AC8200B1 /* POPMath.mm */,
+				3F48DFCF1BB523F6A2F3FC50728B4AEC /* POPPropertyAnimation.h */,
+				BAD43ABF27EB87106CAC54E3188CDEF7 /* POPPropertyAnimation.mm */,
+				8D5F32BF38B4B0636701C1B18C447373 /* POPPropertyAnimationInternal.h */,
+				78A99FF1AE18A55F21F1A7EFD22CB760 /* POPSpringAnimation.h */,
+				DE518C04D2D0BE362B0C9AEA63458B1D /* POPSpringAnimation.mm */,
+				4610D0EEE46C77BB53B44A2FC92070F0 /* POPSpringAnimationInternal.h */,
+				E3670350352ECA00CB9485B4D77C44B1 /* POPSpringSolver.h */,
+				F7A29A38495D2B879E968762EB68007E /* POPVector.h */,
+				29451D1C1AEFBBBE626945D115BDE49E /* POPVector.mm */,
+				25EC68FD16BC7564DCAF235BECC4EC2C /* TransformationMatrix.cpp */,
+				1523E2F8BB57CEDCAD2E28BD777DD936 /* TransformationMatrix.h */,
+				F5FDB263DF707648161FAA7328EB4735 /* UnitBezier.h */,
+				84A7D9C06166312E615B086626E39C33 /* Support Files */,
+			);
+			name = pop;
+			path = pop;
+			sourceTree = "<group>";
+		};
+		C66EB5536640AB60D111898C406BD08C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D7506300E60D539BF23FB035A75B0ED /* libCYLTabBarController.a */,
+				E8CA1230007034B3DA17306A14E02D71 /* libJYRouter.a */,
+				ABAB6A90F688FD4620D5B9946CC3AD04 /* libPods-JYLocalizedExample.a */,
+				D5E14B1D173C13A884137DFA1570E104 /* libpop.a */,
+				2943CA4547C1A45A2508E76B8C2C7F21 /* libYYModel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2C2DF79751C5A706A28063A71F40147 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				DF59BA72B28A581143A3B65DA11B60F5 /* NSObject+YYModel.h */,
+				0DFAB7303D9843CCB17E771CEDE8A7D9 /* NSObject+YYModel.m */,
+				F4FF894E03C55353D328D2B46415966F /* YYClassInfo.h */,
+				68153CEAE9A744C8E312A4F33DBD695C /* YYClassInfo.m */,
+				D5D56C020C51097A79B694D96BDBE62B /* YYModel.h */,
+				24FBADEEFAFE9AF841186B1B077F57D5 /* Support Files */,
+			);
+			name = YYModel;
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		28E06A52AD10802080DFCE1CA001AE8A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF7DC14F53095A00ED8B9D8E1012092E /* JYRouter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C78E73A98973590A928B58C2EAF61975 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19D3300B15992369039245BBCDF7450 /* NSObject+YYModel.h in Headers */,
+				4DDC0E32A28CD1591AD5E935B8077B89 /* YYClassInfo.h in Headers */,
+				0033878EE9668514ED5F0DB154779D31 /* YYModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C868F0ACCAEEF6A280F67220FA841F18 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0522ACF2781856CBA1500F7D1893CF /* CYLConstants.h in Headers */,
+				BCC810F4BF3C8431FF04B44BA7010E30 /* CYLPlusButton.h in Headers */,
+				AF98613A2E16B158F083A50CACACACB8 /* CYLTabBar.h in Headers */,
+				E29EAC3768E043B012D7F9C7FDBF13C9 /* CYLTabBarController.h in Headers */,
+				E25B1BADFD408EC752C7295C16CBAE14 /* UIControl+CYLTabBarControllerExtention.h in Headers */,
+				C176A23166E147849485E017AEAFE889 /* UITabBarItem+CYLTabBarControllerExtention.h in Headers */,
+				EEC5B4B07B961E37F32DF019E0C3B69E /* UIView+CYLTabBarControllerExtention.h in Headers */,
+				9CB8CDC7B89DBFC7B4E9FF289E690DBE /* UIViewController+CYLTabBarControllerExtention.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA1E37CF47F14851C47AE6F1443E9A1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5196CDA9CEF98D967331FC79BCC07823 /* FloatConversion.h in Headers */,
+				7DBBB3B3B54837C0804F8DE1920954AA /* POP.h in Headers */,
+				A67A37E59E2CAB0161C9C99DC1D8A7BB /* POPAction.h in Headers */,
+				18797092EECD1305B240DF52BC9E2733 /* POPAnimatableProperty.h in Headers */,
+				9EB91B8F2C304AFF9C1EA24FCD3015A4 /* POPAnimatablePropertyTypes.h in Headers */,
+				3B9958D3DDDD9D4A795803AE9DB74D5C /* POPAnimation.h in Headers */,
+				AADD794EE358A7D55FAFD5FE66FCA873 /* POPAnimationEvent.h in Headers */,
+				97873F1496501F5095B0A4467BBED93D /* POPAnimationEventInternal.h in Headers */,
+				1258F1C3ED90D5C99DF32EC83BF07771 /* POPAnimationExtras.h in Headers */,
+				4BB8278AD316A07C4A9C16C0C2CAF243 /* POPAnimationInternal.h in Headers */,
+				82034B138880550EDDCB043D5AD6FA85 /* POPAnimationPrivate.h in Headers */,
+				71EAFD2140C40E8985F6D04A0816425B /* POPAnimationRuntime.h in Headers */,
+				911E181AB52B8256225D42536A483F27 /* POPAnimationTracer.h in Headers */,
+				21A021F60E8C20404CB4C83487EF44E5 /* POPAnimationTracerInternal.h in Headers */,
+				14954CA40BD60FE6272EA34E8DB7D69E /* POPAnimator.h in Headers */,
+				5196923B219C3E7EE5F053FD01902E9E /* POPAnimatorPrivate.h in Headers */,
+				0B24207423C72DD6A5DEBBD387A95EBC /* POPBasicAnimation.h in Headers */,
+				E2EB975C96357EB7E585D9BCF5811B8C /* POPBasicAnimationInternal.h in Headers */,
+				80921C3C88CA4C4E8D91167A7F46BBD8 /* POPCGUtils.h in Headers */,
+				B16379B3E3B093734FD62D2FBED468E9 /* POPCustomAnimation.h in Headers */,
+				6765333B05A5050277EE107BCBC30AE6 /* POPDecayAnimation.h in Headers */,
+				3FE94431BB0B7C9F491F3558E29E7BD4 /* POPDecayAnimationInternal.h in Headers */,
+				24DEAADAAAFB0B855EE56338BBD72691 /* POPDefines.h in Headers */,
+				F38E4928E0F7B053E1A09B18A53609F6 /* POPGeometry.h in Headers */,
+				6BE0A458487B359052749723A35D831C /* POPLayerExtras.h in Headers */,
+				12A325D24D8BF9B3848DD3220945FF58 /* POPMath.h in Headers */,
+				7E6A320338740CE439D7BA5AC3D8FB6E /* POPPropertyAnimation.h in Headers */,
+				2B0BA59D6EBFC3E30E6909EF85E97CD8 /* POPPropertyAnimationInternal.h in Headers */,
+				290D10F76E6A8BF6C0A73684EDEA2049 /* POPSpringAnimation.h in Headers */,
+				BAB35412B2D1DBD2CD02975B343FC7D4 /* POPSpringAnimationInternal.h in Headers */,
+				A00691F267F530DBA5234453D19CF2B9 /* POPSpringSolver.h in Headers */,
+				2B7870D6549743111806158615E4171B /* POPVector.h in Headers */,
+				5578BAF4914912FE6789B6860056597C /* TransformationMatrix.h in Headers */,
+				7FC9E94EA62AB8BA984B1C68C100C7B6 /* UnitBezier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		272B6902EC233437C8C814A53CD3E70D /* CYLTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92FEB1DD0BE395A76B5AF3D9139E078D /* Build configuration list for PBXNativeTarget "CYLTabBarController" */;
+			buildPhases = (
+				784930208F19227104C7EF1F59B9693D /* Sources */,
+				6797EE802466FB38B4E3401FAE2E5B6A /* Frameworks */,
+				C868F0ACCAEEF6A280F67220FA841F18 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CYLTabBarController;
+			productName = CYLTabBarController;
+			productReference = 0D7506300E60D539BF23FB035A75B0ED /* libCYLTabBarController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		27883E64A3D973B97C14634604592BDD /* pop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82FE8821B287BA2ACDF3EBFBC1383324 /* Build configuration list for PBXNativeTarget "pop" */;
+			buildPhases = (
+				8DC6F655A4DC06C300DC8B2909660A22 /* Sources */,
+				F85178E02326258BE5726FE8CDAA397D /* Frameworks */,
+				DA1E37CF47F14851C47AE6F1443E9A1D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pop;
+			productName = pop;
+			productReference = D5E14B1D173C13A884137DFA1570E104 /* libpop.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		62BB3377375546AA855C592025BA7DFC /* YYModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 154BFA913453DF612017486550F6F183 /* Build configuration list for PBXNativeTarget "YYModel" */;
+			buildPhases = (
+				46318967E5CDEFA7EE119300E047E1E0 /* Sources */,
+				D9D349FCF9B001A0D6123E3833996473 /* Frameworks */,
+				C78E73A98973590A928B58C2EAF61975 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYModel;
+			productName = YYModel;
+			productReference = 2943CA4547C1A45A2508E76B8C2C7F21 /* libYYModel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7D9E2868491D1ACA24B1A3716C1B268B /* JYRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36F31FB089D521D1251A6D14E89BDC4F /* Build configuration list for PBXNativeTarget "JYRouter" */;
+			buildPhases = (
+				938EB6D9C8D3029F3E0A3960FFAAEE35 /* Sources */,
+				9A329EC81E3D040E185373DE44948DDE /* Frameworks */,
+				28E06A52AD10802080DFCE1CA001AE8A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JYRouter;
+			productName = JYRouter;
+			productReference = E8CA1230007034B3DA17306A14E02D71 /* libJYRouter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8A420885ECC4502916956F7D4249329A /* Pods-JYLocalizedExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 974785915A0B83A884F2F869924E3E73 /* Build configuration list for PBXNativeTarget "Pods-JYLocalizedExample" */;
+			buildPhases = (
+				54566C95BE484F899944ECE84CB4FE33 /* Sources */,
+				B31C9CDC9A15700F8E48EB14C614B0C3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B06868340D751E394F7E0B97017C6E7 /* PBXTargetDependency */,
+				C00CE38580545669AC52F1E1983B7569 /* PBXTargetDependency */,
+				D756304F963B38223F88E2E2F7DCAF4E /* PBXTargetDependency */,
+				562D043FC33CA2B0EA23BD64D441F38E /* PBXTargetDependency */,
+			);
+			name = "Pods-JYLocalizedExample";
+			productName = "Pods-JYLocalizedExample";
+			productReference = ABAB6A90F688FD4620D5B9946CC3AD04 /* libPods-JYLocalizedExample.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C66EB5536640AB60D111898C406BD08C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				272B6902EC233437C8C814A53CD3E70D /* CYLTabBarController */,
+				7D9E2868491D1ACA24B1A3716C1B268B /* JYRouter */,
+				8A420885ECC4502916956F7D4249329A /* Pods-JYLocalizedExample */,
+				27883E64A3D973B97C14634604592BDD /* pop */,
+				62BB3377375546AA855C592025BA7DFC /* YYModel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46318967E5CDEFA7EE119300E047E1E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61F21CB5C3DD07BDD29FEEE1D7D905E /* NSObject+YYModel.m in Sources */,
+				CC5FF31296C12F914659BB5A75504D8F /* YYClassInfo.m in Sources */,
+				293FD05B980C59BF9525B36E5A483012 /* YYModel-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54566C95BE484F899944ECE84CB4FE33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE349B4F660220E7B52D02ECC1CF6B6 /* Pods-JYLocalizedExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		784930208F19227104C7EF1F59B9693D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF357450ECA5E02619EEB51C674777F /* CYLPlusButton.m in Sources */,
+				E13F1975BF0A297A6C85CAEB45089EB7 /* CYLTabBar.m in Sources */,
+				F2EFCB7072B045B6098F21736780ED74 /* CYLTabBarController-dummy.m in Sources */,
+				8F2DF6DC66C8AA7DB0598C25B554AF48 /* CYLTabBarController.m in Sources */,
+				3D9BB3D3508F92A878158549613BAFC2 /* UIControl+CYLTabBarControllerExtention.m in Sources */,
+				B88AF89F82C021AC5DA9D180356A7213 /* UITabBarItem+CYLTabBarControllerExtention.m in Sources */,
+				BED3C0208A5765F74BFBA9295DEDEDD9 /* UIView+CYLTabBarControllerExtention.m in Sources */,
+				8C9338D4070AAE60C40C5EE238F0FEA1 /* UIViewController+CYLTabBarControllerExtention.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC6F655A4DC06C300DC8B2909660A22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F407766C4BC0BDFB4D83B92B1CA53BB8 /* pop-dummy.m in Sources */,
+				BE99DB815F3C619239DE9F5727345067 /* POPAnimatableProperty.mm in Sources */,
+				FF331FBF4C86C9B4406D9B1155F9FD31 /* POPAnimation.mm in Sources */,
+				5EC4D72CE771B798EFE488ECFD0EFE8B /* POPAnimationEvent.mm in Sources */,
+				67FF72471C06D54571607032DBBB78D5 /* POPAnimationExtras.mm in Sources */,
+				46E1FA1123C2BFF95F5C4EAC1884A7FD /* POPAnimationRuntime.mm in Sources */,
+				C8E2258C6B73F63B855DF64F69F9066B /* POPAnimationTracer.mm in Sources */,
+				40FB8E5D7CD0A4060C1A535F9B40129D /* POPAnimator.mm in Sources */,
+				17C0BFC00B437D500F589A421BBB961F /* POPBasicAnimation.mm in Sources */,
+				1CE7D9F532CE7C5FA00CAEBA1B34A47D /* POPCGUtils.mm in Sources */,
+				10158FE9FC2901B64E283AEAB7578DD4 /* POPCustomAnimation.mm in Sources */,
+				C52351C4C5A76291EE49B6A4BEE84772 /* POPDecayAnimation.mm in Sources */,
+				2DFC298C32620A3290A15FE1281A1C70 /* POPGeometry.mm in Sources */,
+				55DB4D1862257A13049733743F196D2D /* POPLayerExtras.mm in Sources */,
+				EE83BA5301F837B28824D55AF9C1DA53 /* POPMath.mm in Sources */,
+				8D371CE2F2CCB2D27226EF12E36C93D7 /* POPPropertyAnimation.mm in Sources */,
+				16D4F108DE765BA5A22AFFCB70DBF681 /* POPSpringAnimation.mm in Sources */,
+				6DED2E9B80FE6206CF56B23C54FAC019 /* POPVector.mm in Sources */,
+				654CD7A049682F505589A68BF4F6A630 /* TransformationMatrix.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938EB6D9C8D3029F3E0A3960FFAAEE35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6B9816217F7E4C97B7D1B3711D5AD0 /* JYRouter-dummy.m in Sources */,
+				EB8CAF8E4FA09E84963EA141262830CA /* JYRouter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		562D043FC33CA2B0EA23BD64D441F38E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pop;
+			target = 27883E64A3D973B97C14634604592BDD /* pop */;
+			targetProxy = 604F8157FDC175F3A8AE08D158430A66 /* PBXContainerItemProxy */;
+		};
+		7B06868340D751E394F7E0B97017C6E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CYLTabBarController;
+			target = 272B6902EC233437C8C814A53CD3E70D /* CYLTabBarController */;
+			targetProxy = A55F825EF6ECD4714D866487A70D51AC /* PBXContainerItemProxy */;
+		};
+		C00CE38580545669AC52F1E1983B7569 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JYRouter;
+			target = 7D9E2868491D1ACA24B1A3716C1B268B /* JYRouter */;
+			targetProxy = 063647099662907A4CB5CC08B9BDC87F /* PBXContainerItemProxy */;
+		};
+		D756304F963B38223F88E2E2F7DCAF4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYModel;
+			target = 62BB3377375546AA855C592025BA7DFC /* YYModel */;
+			targetProxy = F78FB101A3ECA84A9DD1FC11A336A9C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10ABCC92923E0149B1F4C6A1347E60BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5771030F80BDD52813257EC440C219 /* YYModel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
+		1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		24065FFEBC9CBE8A62F1E29FCB9E6726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03ED4FEE311E37D30501FD9E239B4D85 /* pop.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/pop/pop-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36AB84B2E994188023DA8C3921D59EAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2843B904EC398D9266FC8ED6C4B7FD67 /* CYLTabBarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CYLTabBarController/CYLTabBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
+		86869D7634E09EF4901539E921271D04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C9812DBAFC1BE7CB5CF79ADE0321241 /* Pods-JYLocalizedExample.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		889D11CC180F6DA10127EC7A971FC3A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CDD2BF0C26BB0090613155B28BDA782 /* JYRouter.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JYRouter/JYRouter-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
+		99F42A2898FF5221780E2CD44559DA57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5771030F80BDD52813257EC440C219 /* YYModel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+		BAC51F194CCC63F11AAECCD040D464F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AFCEE7A38594A6CB596EBC5FEB8A20D /* Pods-JYLocalizedExample.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BC478D6862C1565D4C0A540853DB48C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03ED4FEE311E37D30501FD9E239B4D85 /* pop.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/pop/pop-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+		C8EE19BE34E46253BE4402B879312225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CDD2BF0C26BB0090613155B28BDA782 /* JYRouter.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JYRouter/JYRouter-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+		FFB5D4A860E978C37744F961B6D5A6B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2843B904EC398D9266FC8ED6C4B7FD67 /* CYLTabBarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CYLTabBarController/CYLTabBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		154BFA913453DF612017486550F6F183 /* Build configuration list for PBXNativeTarget "YYModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99F42A2898FF5221780E2CD44559DA57 /* Debug */,
+				10ABCC92923E0149B1F4C6A1347E60BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36F31FB089D521D1251A6D14E89BDC4F /* Build configuration list for PBXNativeTarget "JYRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8EE19BE34E46253BE4402B879312225 /* Debug */,
+				889D11CC180F6DA10127EC7A971FC3A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82FE8821B287BA2ACDF3EBFBC1383324 /* Build configuration list for PBXNativeTarget "pop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC478D6862C1565D4C0A540853DB48C8 /* Debug */,
+				24065FFEBC9CBE8A62F1E29FCB9E6726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92FEB1DD0BE395A76B5AF3D9139E078D /* Build configuration list for PBXNativeTarget "CYLTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB5D4A860E978C37744F961B6D5A6B2 /* Debug */,
+				36AB84B2E994188023DA8C3921D59EAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		974785915A0B83A884F2F869924E3E73 /* Build configuration list for PBXNativeTarget "Pods-JYLocalizedExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC51F194CCC63F11AAECCD040D464F4 /* Debug */,
+				86869D7634E09EF4901539E921271D04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

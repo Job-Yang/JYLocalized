@@ -1,0 +1,9 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CYLTabBarController" "${PODS_ROOT}/Headers/Public/JYRouter" "${PODS_ROOT}/Headers/Public/YYModel" "${PODS_ROOT}/Headers/Public/pop"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/CYLTabBarController" "$PODS_CONFIGURATION_BUILD_DIR/JYRouter" "$PODS_CONFIGURATION_BUILD_DIR/YYModel" "$PODS_CONFIGURATION_BUILD_DIR/pop"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/CYLTabBarController" -isystem "${PODS_ROOT}/Headers/Public/JYRouter" -isystem "${PODS_ROOT}/Headers/Public/YYModel" -isystem "${PODS_ROOT}/Headers/Public/pop"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"CYLTabBarController" -l"JYRouter" -l"YYModel" -l"c++" -l"pop" -framework "CoreFoundation" -framework "Foundation"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

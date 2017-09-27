@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4110DE8F7DD847BF64A0C2BB /* libPods-JYLocalizedExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B68FF1C3FA3E8934659EFB4D /* libPods-JYLocalizedExample.a */; };
+		B11B2EAD1F7A3D9300D352B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B11B2EAB1F7A3D9300D352B7 /* Main.storyboard */; };
+		B11B2EAF1F7A3D9300D352B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B11B2EAE1F7A3D9300D352B7 /* Assets.xcassets */; };
+		B11B2EB21F7A3D9300D352B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B11B2EB01F7A3D9300D352B7 /* LaunchScreen.storyboard */; };
+		B11B2EB51F7A3D9300D352B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B11B2EB41F7A3D9300D352B7 /* main.m */; };
+		B11B2EBE1F7A3E2700D352B7 /* JYLocalizedHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B11B2EBD1F7A3E2700D352B7 /* JYLocalizedHelper.m */; };
+		B11B2ECF1F7A83C200D352B7 /* JYTabBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B11B2EC71F7A83C100D352B7 /* JYTabBarManager.m */; };
+		B11B2ED01F7A83C200D352B7 /* JYPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = B11B2ECC1F7A83C200D352B7 /* JYPopView.m */; };
+		B11B2ED11F7A83C200D352B7 /* JYTabBarPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B11B2ECE1F7A83C200D352B7 /* JYTabBarPlusButton.m */; };
+		B18EB0CB1F7B87E800DF31E1 /* JYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18EB0C41F7B87E700DF31E1 /* JYNavigationController.m */; };
+		B18EB0CC1F7B87E800DF31E1 /* JYLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18EB0C81F7B87E700DF31E1 /* JYLanguageViewController.m */; };
+		B18EB0CF1F7B890D00DF31E1 /* JYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18EB0CE1F7B890D00DF31E1 /* JYHomeViewController.m */; };
+		B18EB0D21F7B891D00DF31E1 /* JYFeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18EB0D11F7B891D00DF31E1 /* JYFeedsViewController.m */; };
+		B18EB0D51F7B892C00DF31E1 /* JYMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18EB0D41F7B892C00DF31E1 /* JYMessageViewController.m */; };
+		B18EB0DB1F7B8B6D00DF31E1 /* JYCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B18EB0DA1F7B8B6D00DF31E1 /* JYCellModel.m */; };
+		B18EB0DF1F7B910000DF31E1 /* JYMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18EB0DE1F7B90FF00DF31E1 /* JYMineViewController.m */; };
+		B18EB0E41F7B912400DF31E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B18EB0E31F7B912400DF31E1 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9C1120B9F2B146938B5BFA4B /* Pods-JYLocalizedExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYLocalizedExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYLocalizedExample/Pods-JYLocalizedExample.debug.xcconfig"; sourceTree = "<group>"; };
+		B11B2EA21F7A3D9300D352B7 /* JYLocalizedExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYLocalizedExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B11B2EAC1F7A3D9300D352B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B11B2EAE1F7A3D9300D352B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B11B2EB11F7A3D9300D352B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B11B2EB31F7A3D9300D352B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B11B2EB41F7A3D9300D352B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B11B2EBC1F7A3E2700D352B7 /* JYLocalizedHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYLocalizedHelper.h; sourceTree = "<group>"; };
+		B11B2EBD1F7A3E2700D352B7 /* JYLocalizedHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYLocalizedHelper.m; sourceTree = "<group>"; };
+		B11B2EC61F7A83C100D352B7 /* JYTabBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYTabBarManager.h; sourceTree = "<group>"; };
+		B11B2EC71F7A83C100D352B7 /* JYTabBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYTabBarManager.m; sourceTree = "<group>"; };
+		B11B2ECB1F7A83C200D352B7 /* JYPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYPopView.h; sourceTree = "<group>"; };
+		B11B2ECC1F7A83C200D352B7 /* JYPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYPopView.m; sourceTree = "<group>"; };
+		B11B2ECD1F7A83C200D352B7 /* JYTabBarPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYTabBarPlusButton.h; sourceTree = "<group>"; };
+		B11B2ECE1F7A83C200D352B7 /* JYTabBarPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYTabBarPlusButton.m; sourceTree = "<group>"; };
+		B11B2ED31F7B4ED600D352B7 /* JYMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYMacro.h; sourceTree = "<group>"; };
+		B11B2ED41F7B530D00D352B7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		B11B2ED51F7B530E00D352B7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B11B2ED61F7B531900D352B7 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		B11B2ED71F7B531900D352B7 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B11B2ED81F7B532100D352B7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		B11B2ED91F7B532200D352B7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B18EB0B81F7B763900DF31E1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B18EB0C31F7B87E700DF31E1 /* JYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYNavigationController.h; sourceTree = "<group>"; };
+		B18EB0C41F7B87E700DF31E1 /* JYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYNavigationController.m; sourceTree = "<group>"; };
+		B18EB0C71F7B87E700DF31E1 /* JYLanguageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYLanguageViewController.h; sourceTree = "<group>"; };
+		B18EB0C81F7B87E700DF31E1 /* JYLanguageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYLanguageViewController.m; sourceTree = "<group>"; };
+		B18EB0CD1F7B890D00DF31E1 /* JYHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYHomeViewController.h; sourceTree = "<group>"; };
+		B18EB0CE1F7B890D00DF31E1 /* JYHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYHomeViewController.m; sourceTree = "<group>"; };
+		B18EB0D01F7B891D00DF31E1 /* JYFeedsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYFeedsViewController.h; sourceTree = "<group>"; };
+		B18EB0D11F7B891D00DF31E1 /* JYFeedsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYFeedsViewController.m; sourceTree = "<group>"; };
+		B18EB0D31F7B892C00DF31E1 /* JYMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYMessageViewController.h; sourceTree = "<group>"; };
+		B18EB0D41F7B892C00DF31E1 /* JYMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYMessageViewController.m; sourceTree = "<group>"; };
+		B18EB0D91F7B8B6D00DF31E1 /* JYCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYCellModel.h; sourceTree = "<group>"; };
+		B18EB0DA1F7B8B6D00DF31E1 /* JYCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYCellModel.m; sourceTree = "<group>"; };
+		B18EB0DD1F7B90FF00DF31E1 /* JYMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYMineViewController.h; sourceTree = "<group>"; };
+		B18EB0DE1F7B90FF00DF31E1 /* JYMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYMineViewController.m; sourceTree = "<group>"; };
+		B18EB0E21F7B912400DF31E1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B18EB0E31F7B912400DF31E1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B68FF1C3FA3E8934659EFB4D /* libPods-JYLocalizedExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JYLocalizedExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9E2C97B08B67CECC0144FAD /* Pods-JYLocalizedExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYLocalizedExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYLocalizedExample/Pods-JYLocalizedExample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B11B2E9F1F7A3D9300D352B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4110DE8F7DD847BF64A0C2BB /* libPods-JYLocalizedExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C52F037EAD64B2BFACB1F22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C1120B9F2B146938B5BFA4B /* Pods-JYLocalizedExample.debug.xcconfig */,
+				F9E2C97B08B67CECC0144FAD /* Pods-JYLocalizedExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8ECE80E4A08BAB705885BD8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B68FF1C3FA3E8934659EFB4D /* libPods-JYLocalizedExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B11B2E991F7A3D9300D352B7 = {
+			isa = PBXGroup;
+			children = (
+				B11B2EA41F7A3D9300D352B7 /* JYLocalizedExample */,
+				B11B2EA31F7A3D9300D352B7 /* Products */,
+				7C52F037EAD64B2BFACB1F22 /* Pods */,
+				8ECE80E4A08BAB705885BD8A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B11B2EA31F7A3D9300D352B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B11B2EA21F7A3D9300D352B7 /* JYLocalizedExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B11B2EA41F7A3D9300D352B7 /* JYLocalizedExample */ = {
+			isa = PBXGroup;
+			children = (
+				B11B2EBB1F7A3E2700D352B7 /* JYLocalized */,
+				B18EB0E11F7B912400DF31E1 /* AppDelegate */,
+				B11B2EC51F7A83C100D352B7 /* Manager */,
+				B11B2ED21F7B4ED600D352B7 /* Marcos */,
+				B11B2EC81F7A83C100D352B7 /* ViewControllers */,
+				B11B2ECA1F7A83C200D352B7 /* Views */,
+				B11B2EC91F7A83C200D352B7 /* Models */,
+				B18EB0E51F7B91B500DF31E1 /* Utils */,
+				B18EB0E01F7B912400DF31E1 /* Resources */,
+				B11B2EAB1F7A3D9300D352B7 /* Main.storyboard */,
+				B11B2EAE1F7A3D9300D352B7 /* Assets.xcassets */,
+				B11B2EB01F7A3D9300D352B7 /* LaunchScreen.storyboard */,
+				B11B2EB31F7A3D9300D352B7 /* Info.plist */,
+				B11B2EB41F7A3D9300D352B7 /* main.m */,
+				B18EB0B81F7B763900DF31E1 /* PrefixHeader.pch */,
+			);
+			path = JYLocalizedExample;
+			sourceTree = "<group>";
+		};
+		B11B2EBB1F7A3E2700D352B7 /* JYLocalized */ = {
+			isa = PBXGroup;
+			children = (
+				B11B2EBC1F7A3E2700D352B7 /* JYLocalizedHelper.h */,
+				B11B2EBD1F7A3E2700D352B7 /* JYLocalizedHelper.m */,
+			);
+			path = JYLocalized;
+			sourceTree = "<group>";
+		};
+		B11B2EC51F7A83C100D352B7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B11B2EC61F7A83C100D352B7 /* JYTabBarManager.h */,
+				B11B2EC71F7A83C100D352B7 /* JYTabBarManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B11B2EC81F7A83C100D352B7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B18EB0C61F7B87E700DF31E1 /* Language */,
+				B18EB0C21F7B87E700DF31E1 /* Navigation */,
+				B18EB0CA1F7B87E700DF31E1 /* Home */,
+				B18EB0C91F7B87E700DF31E1 /* Feeds */,
+				B18EB0C51F7B87E700DF31E1 /* Message */,
+				B18EB0DC1F7B90FF00DF31E1 /* Mine */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B11B2EC91F7A83C200D352B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B18EB0D91F7B8B6D00DF31E1 /* JYCellModel.h */,
+				B18EB0DA1F7B8B6D00DF31E1 /* JYCellModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B11B2ECA1F7A83C200D352B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B11B2ECB1F7A83C200D352B7 /* JYPopView.h */,
+				B11B2ECC1F7A83C200D352B7 /* JYPopView.m */,
+				B11B2ECD1F7A83C200D352B7 /* JYTabBarPlusButton.h */,
+				B11B2ECE1F7A83C200D352B7 /* JYTabBarPlusButton.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B11B2ED21F7B4ED600D352B7 /* Marcos */ = {
+			isa = PBXGroup;
+			children = (
+				B11B2ED31F7B4ED600D352B7 /* JYMacro.h */,
+			);
+			path = Marcos;
+			sourceTree = "<group>";
+		};
+		B18EB0C21F7B87E700DF31E1 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B18EB0C31F7B87E700DF31E1 /* JYNavigationController.h */,
+				B18EB0C41F7B87E700DF31E1 /* JYNavigationController.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		B18EB0C51F7B87E700DF31E1 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				B18EB0D31F7B892C00DF31E1 /* JYMessageViewController.h */,
+				B18EB0D41F7B892C00DF31E1 /* JYMessageViewController.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		B18EB0C61F7B87E700DF31E1 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				B18EB0C71F7B87E700DF31E1 /* JYLanguageViewController.h */,
+				B18EB0C81F7B87E700DF31E1 /* JYLanguageViewController.m */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		B18EB0C91F7B87E700DF31E1 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				B18EB0D01F7B891D00DF31E1 /* JYFeedsViewController.h */,
+				B18EB0D11F7B891D00DF31E1 /* JYFeedsViewController.m */,
+			);
+			path = Feeds;
+			sourceTree = "<group>";
+		};
+		B18EB0CA1F7B87E700DF31E1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B18EB0CD1F7B890D00DF31E1 /* JYHomeViewController.h */,
+				B18EB0CE1F7B890D00DF31E1 /* JYHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B18EB0DC1F7B90FF00DF31E1 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				B18EB0DD1F7B90FF00DF31E1 /* JYMineViewController.h */,
+				B18EB0DE1F7B90FF00DF31E1 /* JYMineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		B18EB0E01F7B912400DF31E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B18EB0E11F7B912400DF31E1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B18EB0E21F7B912400DF31E1 /* AppDelegate.h */,
+				B18EB0E31F7B912400DF31E1 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B18EB0E51F7B91B500DF31E1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B11B2EA11F7A3D9300D352B7 /* JYLocalizedExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B11B2EB81F7A3D9300D352B7 /* Build configuration list for PBXNativeTarget "JYLocalizedExample" */;
+			buildPhases = (
+				F248EEB84E3BD0BC3D2800E6 /* [CP] Check Pods Manifest.lock */,
+				B11B2E9E1F7A3D9300D352B7 /* Sources */,
+				B11B2E9F1F7A3D9300D352B7 /* Frameworks */,
+				B11B2EA01F7A3D9300D352B7 /* Resources */,
+				9F0FD07160775CAE1ED9A616 /* [CP] Embed Pods Frameworks */,
+				F67B9C4E2EBBEEEA40CD24BC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JYLocalizedExample;
+			productName = JYLocalizedExample;
+			productReference = B11B2EA21F7A3D9300D352B7 /* JYLocalizedExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B11B2E9A1F7A3D9300D352B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Job-Yang";
+				TargetAttributes = {
+					B11B2EA11F7A3D9300D352B7 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B11B2E9D1F7A3D9300D352B7 /* Build configuration list for PBXProject "JYLocalizedExample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B11B2E991F7A3D9300D352B7;
+			productRefGroup = B11B2EA31F7A3D9300D352B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B11B2EA11F7A3D9300D352B7 /* JYLocalizedExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B11B2EA01F7A3D9300D352B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B11B2EB21F7A3D9300D352B7 /* LaunchScreen.storyboard in Resources */,
+				B11B2EAF1F7A3D9300D352B7 /* Assets.xcassets in Resources */,
+				B11B2EAD1F7A3D9300D352B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F0FD07160775CAE1ED9A616 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYLocalizedExample/Pods-JYLocalizedExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F248EEB84E3BD0BC3D2800E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JYLocalizedExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F67B9C4E2EBBEEEA40CD24BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYLocalizedExample/Pods-JYLocalizedExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B11B2E9E1F7A3D9300D352B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18EB0DF1F7B910000DF31E1 /* JYMineViewController.m in Sources */,
+				B11B2ED01F7A83C200D352B7 /* JYPopView.m in Sources */,
+				B18EB0D21F7B891D00DF31E1 /* JYFeedsViewController.m in Sources */,
+				B11B2EBE1F7A3E2700D352B7 /* JYLocalizedHelper.m in Sources */,
+				B18EB0CF1F7B890D00DF31E1 /* JYHomeViewController.m in Sources */,
+				B11B2ED11F7A83C200D352B7 /* JYTabBarPlusButton.m in Sources */,
+				B18EB0CC1F7B87E800DF31E1 /* JYLanguageViewController.m in Sources */,
+				B18EB0E41F7B912400DF31E1 /* AppDelegate.m in Sources */,
+				B11B2EB51F7A3D9300D352B7 /* main.m in Sources */,
+				B18EB0CB1F7B87E800DF31E1 /* JYNavigationController.m in Sources */,
+				B18EB0DB1F7B8B6D00DF31E1 /* JYCellModel.m in Sources */,
+				B18EB0D51F7B892C00DF31E1 /* JYMessageViewController.m in Sources */,
+				B11B2ECF1F7A83C200D352B7 /* JYTabBarManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B11B2EAB1F7A3D9300D352B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B11B2EAC1F7A3D9300D352B7 /* Base */,
+				B11B2ED41F7B530D00D352B7 /* zh-Hans */,
+				B11B2ED61F7B531900D352B7 /* zh-Hant */,
+				B11B2ED81F7B532100D352B7 /* ja */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B11B2EB01F7A3D9300D352B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B11B2EB11F7A3D9300D352B7 /* Base */,
+				B11B2ED51F7B530E00D352B7 /* zh-Hans */,
+				B11B2ED71F7B531900D352B7 /* zh-Hant */,
+				B11B2ED91F7B532200D352B7 /* ja */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B11B2EB61F7A3D9300D352B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JYLocalizedExample/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B11B2EB71F7A3D9300D352B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JYLocalizedExample/PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B11B2EB91F7A3D9300D352B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C1120B9F2B146938B5BFA4B /* Pods-JYLocalizedExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JYLocalizedExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Job-Yang.JYLocalizedExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B11B2EBA1F7A3D9300D352B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9E2C97B08B67CECC0144FAD /* Pods-JYLocalizedExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JYLocalizedExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Job-Yang.JYLocalizedExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B11B2E9D1F7A3D9300D352B7 /* Build configuration list for PBXProject "JYLocalizedExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B11B2EB61F7A3D9300D352B7 /* Debug */,
+				B11B2EB71F7A3D9300D352B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B11B2EB81F7A3D9300D352B7 /* Build configuration list for PBXNativeTarget "JYLocalizedExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B11B2EB91F7A3D9300D352B7 /* Debug */,
+				B11B2EBA1F7A3D9300D352B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B11B2E9A1F7A3D9300D352B7 /* Project object */;
+}
