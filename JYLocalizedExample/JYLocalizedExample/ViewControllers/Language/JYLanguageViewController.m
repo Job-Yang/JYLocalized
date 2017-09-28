@@ -8,7 +8,6 @@
 
 #import "JYLanguageViewController.h"
 #import "JYCellModel.h"
-#import "AppDelegate.h"
 
 static NSString *const kJYTableViewCell = @"JYTableViewCell";
 
@@ -22,14 +21,14 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 
 #pragma mark - life cycle
 - (void)dealloc {
-    self.tableView.delegate   = nil;
+    self.tableView.delegate = nil;
     self.tableView.dataSource = nil;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = JYLocalizedString(@"语言设置", nil);
-    [self initTableView];
+    [self tableView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,10 +36,6 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 }
 
 #pragma mark - setup methods
-- (void)initTableView {
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-}
 
 #pragma mark - UITableViewDataSource
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -48,8 +43,7 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 10)];
-    return view;
+    return [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 10)];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -74,14 +68,8 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kJYTableViewCell];
         cell.textLabel.font = [UIFont systemFontOfSize:14];
     }
-    
     JYCellModel *model = self.languageList[indexPath.row];
-    if (model.enabled) {
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    }
-    else {
-        cell.accessoryType = UITableViewCellAccessoryNone;
-    }
+    cell.accessoryType = model.enabled ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
     cell.textLabel.text = model.title;
 
     return cell;
@@ -89,6 +77,7 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     for (int i = 0; i < self.languageList.count; i++) {
         JYCellModel *model = self.languageList[i];
         model.enabled = (indexPath.row == i);
@@ -137,6 +126,18 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 }
 
 #pragma mark - getter & setter
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, TOP_LAYOUT_GUIDE, SCREEN_WIDTH, SAFE_HEIGHT)];
+        _tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.dataSource = self;
+        _tableView.delegate = self;
+        [self.view addSubview:_tableView];
+    }
+    return _tableView;
+}
+
 - (NSMutableArray<JYCellModel *> *)languageList {
     if (!_languageList) {
         _languageList  = [NSMutableArray array];

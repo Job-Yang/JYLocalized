@@ -20,8 +20,8 @@
     self.window.frame = [UIScreen mainScreen].bounds;
     self.window.backgroundColor = [UIColor whiteColor];
     // 设置根视图
-    [self.window setRootViewController:[JYTabBarManager manager].tabBarController];
     [[JYTabBarManager manager] registerTabBar];
+    [self.window setRootViewController:[JYTabBarManager manager].tabBarController];
     
     // 注册重新加载RootVC的通知
     [self addResetRootVCObserver];

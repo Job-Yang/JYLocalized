@@ -43,15 +43,19 @@
 
 #define RGB(r, g, b) RGBA(r, g, b, 1)
 #define RGBA(r, g, b, a) [UIColor colorWithRed:(float)r/255.0 green:(float)g/255.0 blue:(float)b/255.0 alpha:a]
+#define NORMAL_COLOR RGB(102,102,102)
+#define SELECTED_COLOR RGB(4,122,245)
+
 #define SCREEN_WIDTH  ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
-#define IMG(name) [UIImage imageNamed:name]
-
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 #define IS_IPHONE_X (IS_IPHONE && SCREEN_HEIGHT == 812.0f)
 #define TOP_LAYOUT_GUIDE (IS_IPHONE_X ? 88.0 : 64.0)
 #define BOTTOM_LAYOUT_GUIDE (IS_IPHONE_X ? 34.0 : 0.0)
 #define SAFE_HEIGHT (SCREEN_HEIGHT-TOP_LAYOUT_GUIDE-BOTTOM_LAYOUT_GUIDE)
+
 #define DEVICE_VERSION [[[UIDevice currentDevice] systemVersion] integerValue]
+
+#define IMG(name) [UIImage imageNamed:name]
 
 #endif /* JYMacro_h */

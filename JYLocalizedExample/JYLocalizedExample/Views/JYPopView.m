@@ -10,13 +10,11 @@
 #import "pop.h"
 
 @interface JYPopView ()
-
 @property (strong, nonatomic) UIImageView *bgImageView;
 @property (strong, nonatomic) UIImageView *logoImageView;
-@property (strong, nonatomic) UIView *dropOffView;
-@property (strong, nonatomic) UIView *pickUpView;
+@property (strong, nonatomic) UIView *viewOne;
+@property (strong, nonatomic) UIView *viewTwo;
 @property (strong, nonatomic) UIButton *closeButton;
-@property (strong, nonatomic) UIVisualEffectView *effectView;
 @end
 
 @implementation JYPopView
@@ -32,11 +30,10 @@
 
 #pragma mark - setup methods
 - (void)setup {
-    [self addSubview:self.pickUpView];
-    [self addSubview:self.dropOffView];
+    [self addSubview:self.viewOne];
+    [self addSubview:self.viewTwo];
     [self addSubview:self.closeButton];
     [self insertSubview:self.bgImageView atIndex:0];
-//    [self insertSubview:self.effectView atIndex:0];
 }
 
 #pragma mark - event & response
@@ -76,9 +73,6 @@
 }
 
 - (void)chooseSendType:(id)sender {
-    if ([self.delegate respondsToSelector:@selector(sendTypeDidChange:)]) {
-        [self.delegate sendTypeDidChange:[self sendTypeWithSender:sender]];
-    }
     [self hide];
 }
 
@@ -114,30 +108,11 @@
     return view;
 }
 
-- (JYSendType)sendTypeWithSender:(id)sender {
-    UIButton *button = (UIButton *)sender;
-    NSString *dropOffKey = JYLocalizedString(@"网点投递", nil);
-    return (button.tag == [dropOffKey hash]) ? JYSendTypeDropOffView : JYSendTypePickUpView;
-}
-
-- (NSString *)getLocalizedImageName {
-    //多语言适配
-    if ([[[JYLocalizedHelper standardHelper] currentLanguage] isEqualToString:@"en"]) {
-        return @"sendParcels_sendType_en";
-    }
-    else if ([[[JYLocalizedHelper standardHelper] currentLanguage] isEqualToString:@"zh-Hant"]) {
-        return @"sendParcels_sendType_zh-Hant";
-    }
-    else {
-        return @"sendParcels_sendType_advertising";
-    }
-}
-
 #pragma mark - getter & setter
 - (UIImageView *)bgImageView {
     if (!_bgImageView) {
         UIImageView *imageView = [[UIImageView alloc] init];
-        imageView.image = IMG([self getLocalizedImageName]);
+        imageView.image = IMG(@"");
         imageView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
         imageView.contentMode = UIViewContentModeScaleAspectFill;
         _bgImageView = imageView;
@@ -145,41 +120,30 @@
     return _bgImageView;
 }
 
-- (UIImageView *)logoImageView {
-    if (!_logoImageView) {
-        UIImageView *imageView = [[UIImageView alloc] init];
-        imageView.image = IMG(@"要图专用图");
-        imageView.frame = CGRectMake(0, 100, 100, 50);
-        imageView.contentMode = UIViewContentModeScaleAspectFit;
-        _logoImageView = imageView;
-    }
-    return _logoImageView;
-}
-
-- (UIView *)pickUpView {
-    if (!_pickUpView) {
+- (UIView *)viewOne {
+    if (!_viewOne) {
         CGFloat width = 65;
         UIView *view = [self setViewWithSize:CGSizeMake(width, width+30)
                                    imageName:@"sendParcels_reservation_normal"
-                                        text:JYLocalizedString(@"预约取件", nil)
+                                        text:JYLocalizedString(@"页面A", nil)
                                       action:@selector(chooseSendType:)];
         view.center = CGPointMake(self.frame.size.width/4*1, self.closeButton.frame.origin.y - width - 30);
-        _pickUpView = view;
+        _viewOne = view;
     }
-    return _pickUpView;
+    return _viewOne;
 }
 
-- (UIView *)dropOffView {
-    if (!_dropOffView) {
+- (UIView *)viewTwo {
+    if (!_viewTwo) {
         CGFloat width = 65;
         UIView *view = [self setViewWithSize:CGSizeMake(width, width+30)
                                    imageName:@"sendParcels_dorpOf_normal"
-                                        text:JYLocalizedString(@"网点投递", nil)
+                                        text:JYLocalizedString(@"页面A", nil)
                                       action:@selector(chooseSendType:)];
         view.center = CGPointMake(self.frame.size.width/4*3, self.closeButton.frame.origin.y - width - 30);
-        _dropOffView = view;
+        _viewTwo = view;
     }
-    return _dropOffView;
+    return _viewTwo;
 }
 
 - (UIButton *)closeButton {
@@ -191,17 +155,6 @@
         _closeButton = button;
     }
     return _closeButton;
-}
-
-- (UIVisualEffectView *)effectView {
-    if (!_effectView) {
-        UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
-        UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
-        effectView.frame = self.bounds;
-        effectView.alpha = 0.95;
-        _effectView = effectView;
-    }
-    return _effectView;
 }
 
 @end

@@ -1,21 +1,24 @@
 PODS:
   - CYLTabBarController (1.14.1)
-  - JYRouter (2.0)
+  - JYRouter (2.1)
+  - MBProgressHUD (1.0.0)
   - pop (1.0.10)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - CYLTabBarController
   - JYRouter
+  - MBProgressHUD
   - pop
   - YYModel
 
 SPEC CHECKSUMS:
   CYLTabBarController: ec44b6e44166d9869fa649ce22bc728d107ecafc
-  JYRouter: d406f65329ab620a82e7ddad99860687b4a48bfb
+  JYRouter: 4447519f73ff592c92de5a523aaddb6a5752a46a
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: d2545e386b841f1ac695cc7cf5cd017609e4d306
+PODFILE CHECKSUM: 8af07a04e851572bbe948706ee9807d1b1b0b3be
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0.beta.1

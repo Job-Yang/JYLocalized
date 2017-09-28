@@ -5,6 +5,7 @@ platform :ios, '8.0'
 target 'JYLocalizedExample' do
 
 	pod 'CYLTabBarController'
+	pod 'MBProgressHUD'
 	pod 'JYRouter'
 	pod 'YYModel'
 	pod 'pop'

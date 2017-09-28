@@ -12,6 +12,7 @@
 @end
 
 @implementation JYNavigationController
+
 #pragma mark - life cycle
 - (void)dealloc {
     self.interactivePopGestureRecognizer.delegate = nil;
@@ -28,11 +29,10 @@
     [self initData];
 }
 
-
 #pragma mark - setup methods
 - (void)resetUI {
-    //设置NavigationBar背景颜色
-    [[UINavigationBar appearance] setTranslucent:NO];
+//    [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setBarTintColor:SELECTED_COLOR];
     [[UINavigationBar appearance] setShadowImage:[UIImage new]];
 }
 
@@ -55,7 +55,6 @@
     if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)] && animated == YES) {
         self.interactivePopGestureRecognizer.enabled = NO;
     }
-    
     return  [super popToRootViewControllerAnimated:animated];
 }
 

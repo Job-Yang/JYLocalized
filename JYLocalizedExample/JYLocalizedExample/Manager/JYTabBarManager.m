@@ -74,18 +74,18 @@
 - (void)customizeTabBarForController:(CYLTabBarController *)tabBarController {
     NSDictionary *dict1 = @{
                             CYLTabBarItemTitle : JYLocalizedString(@"首页", nil),
-                            CYLTabBarItemImage : @"tabbar_parcels_normal",
-                            CYLTabBarItemSelectedImage : @"tabbar_parcels_selected",
+                            CYLTabBarItemImage : @"tabbar_home_normal",
+                            CYLTabBarItemSelectedImage : @"tabbar_home_selected",
                             };
     NSDictionary *dict2 = @{
                             CYLTabBarItemTitle : JYLocalizedString(@"动态", nil),
-                            CYLTabBarItemImage : @"tabbar_wallet_normal",
-                            CYLTabBarItemSelectedImage : @"tabbar_wallet_selected",
+                            CYLTabBarItemImage : @"tabbar_feeds_normal",
+                            CYLTabBarItemSelectedImage : @"tabbar_feeds_selected",
                             };
     NSDictionary *dict3 = @{
                             CYLTabBarItemTitle : JYLocalizedString(@"消息", nil),
-                            CYLTabBarItemImage : @"tabbar_news_normal",
-                            CYLTabBarItemSelectedImage : @"tabbar_news_selected",
+                            CYLTabBarItemImage : @"tabbar_message_normal",
+                            CYLTabBarItemSelectedImage : @"tabbar_message_selected",
                             };
     NSDictionary *dict4 = @{
                             CYLTabBarItemTitle : JYLocalizedString(@"我的", nil),
@@ -102,19 +102,18 @@
 - (void)customizeTabBarAppearance:(CYLTabBarController *)tabBarController {
     // 普通状态下的文字属性
     NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
-    normalAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:11];
-    normalAttrs[NSForegroundColorAttributeName] = RGB(33,38,39);
+    normalAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:10];
+    normalAttrs[NSForegroundColorAttributeName] = NORMAL_COLOR;
     // 选中状态下的文字属性
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
-    selectedAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:11];
-    selectedAttrs[NSForegroundColorAttributeName] = RGB(37,157,246);
+    selectedAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:10];
+    selectedAttrs[NSForegroundColorAttributeName] = SELECTED_COLOR;
     // 设置文字属性
     UITabBarItem *tabBar = [UITabBarItem appearance];
     [tabBar setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
     [tabBar setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
     [[UITabBar appearance] setBackgroundImage:[[UIImage alloc] init]];
     [[UITabBar appearance] setBackgroundColor:[UIColor whiteColor]];
-    [[UITabBar appearance] setShadowImage:[UIImage imageNamed:@"tapbar_top_line"]];
 }
 
 - (void)resetBadgeWithTabBarController:(CYLTabBarController *)aTabBarController {
@@ -162,7 +161,6 @@
         [tabBarController setViewDidLayoutSubViewsBlock:^(CYLTabBarController *aTabBarController) {
             @strongify(self);
             [self resetBadgeWithTabBarController:aTabBarController];
-            //添加提示动画，引导用户点击
             [self addScaleAnimationOnView:CYLExternPlusButton.imageView repeatCount:3];
         }];
         
