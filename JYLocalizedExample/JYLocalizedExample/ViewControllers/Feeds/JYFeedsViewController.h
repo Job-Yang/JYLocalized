@@ -6,8 +6,8 @@
 //  Copyright © 2017年 Job-Yang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "JYBaseViewController.h"
 
-@interface JYFeedsViewController : UIViewController
+@interface JYFeedsViewController : JYBaseViewController
 
 @end

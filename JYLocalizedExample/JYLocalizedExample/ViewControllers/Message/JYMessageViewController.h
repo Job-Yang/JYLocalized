@@ -6,8 +6,8 @@
 //  Copyright © 2017年 Job-Yang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "JYBaseViewController.h"
 
-@interface JYMessageViewController : UIViewController
+@interface JYMessageViewController : JYBaseViewController
 
 @end

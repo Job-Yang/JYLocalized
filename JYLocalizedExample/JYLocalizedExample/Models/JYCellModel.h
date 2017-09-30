@@ -10,6 +10,10 @@
 
 @interface JYCellModel : NSObject
 /**
+ *  是否选中
+ */
+@property (assign, nonatomic) BOOL enabled;
+/**
  *  key
  */
 @property (copy, nonatomic) NSString *key;
@@ -22,8 +26,12 @@
  */
 @property (copy, nonatomic) NSString *subTitle;
 /**
- *  是否选中
+ *  图标名
  */
-@property (assign, nonatomic) BOOL enabled;
+@property (copy, nonatomic) NSString *iconName;
+/**
+ *  方法名
+ */
+@property (copy, nonatomic) NSString *selName;
 
 @end

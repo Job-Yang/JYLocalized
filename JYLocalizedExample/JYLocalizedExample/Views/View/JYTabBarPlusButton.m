@@ -16,9 +16,8 @@
 @implementation JYTabBarPlusButton
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        self.titleLabel.textAlignment = NSTextAlignmentCenter;
-        self.adjustsImageWhenHighlighted = NO;
-        [self popView];
+//        self.titleLabel.textAlignment = NSTextAlignmentCenter;
+//        self.adjustsImageWhenHighlighted = NO;
     }
     return self;
 }

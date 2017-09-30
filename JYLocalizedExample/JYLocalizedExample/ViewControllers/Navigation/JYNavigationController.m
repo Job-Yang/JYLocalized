@@ -19,10 +19,6 @@
     self.delegate = nil;
 }
 
-- (UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleDefault;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self resetUI];
@@ -31,7 +27,7 @@
 
 #pragma mark - setup methods
 - (void)resetUI {
-//    [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setTranslucent:NO];
     [[UINavigationBar appearance] setBarTintColor:SELECTED_COLOR];
     [[UINavigationBar appearance] setShadowImage:[UIImage new]];
 }

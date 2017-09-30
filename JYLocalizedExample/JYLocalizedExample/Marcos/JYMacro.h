@@ -44,7 +44,7 @@
 #define RGB(r, g, b) RGBA(r, g, b, 1)
 #define RGBA(r, g, b, a) [UIColor colorWithRed:(float)r/255.0 green:(float)g/255.0 blue:(float)b/255.0 alpha:a]
 #define NORMAL_COLOR RGB(102,102,102)
-#define SELECTED_COLOR RGB(4,122,245)
+#define SELECTED_COLOR RGB(41, 44, 50)
 
 #define SCREEN_WIDTH  ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)

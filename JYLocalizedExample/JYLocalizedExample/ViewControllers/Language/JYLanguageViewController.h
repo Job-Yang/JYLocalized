@@ -6,8 +6,8 @@
 //  Copyright © 2016年 360zebra. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "JYBaseViewController.h"
 
-@interface JYLanguageViewController : UIViewController
+@interface JYLanguageViewController : JYBaseViewController
 
 @end

@@ -23,6 +23,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         self.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        self.backgroundColor = [UIColor whiteColor];
         [self setup];
     }
     return self;
@@ -150,7 +151,7 @@
     if (!_closeButton) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.frame = CGRectMake((self.frame.size.width-30)/2, self.frame.size.height - 70, 30, 30);
-        [button setImage:[UIImage imageNamed:@"sendParcels_close_normal"] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"view_close_normal"] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(closeButtonAction) forControlEvents:UIControlEventTouchUpInside];
         _closeButton = button;
     }

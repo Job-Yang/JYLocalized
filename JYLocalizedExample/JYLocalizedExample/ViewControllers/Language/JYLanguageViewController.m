@@ -7,12 +7,13 @@
 //
 
 #import "JYLanguageViewController.h"
+#import "UIViewController+JYHUD.h"
 #import "JYCellModel.h"
+#import "JYTableViewCell.h"
 
 static NSString *const kJYTableViewCell = @"JYTableViewCell";
 
 @interface JYLanguageViewController ()<UITableViewDelegate, UITableViewDataSource>
-
 @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray<JYCellModel *> *languageList;
 @end
@@ -31,6 +32,18 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
     [self tableView];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
@@ -38,40 +51,23 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 #pragma mark - setup methods
 
 #pragma mark - UITableViewDataSource
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 10;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    return [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 10)];
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.languageList.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 50;
-}
-    
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 0.01;
+    return [JYTableViewCell heightWithData:self.languageList[indexPath.row]];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kJYTableViewCell];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kJYTableViewCell];
-        cell.textLabel.font = [UIFont systemFontOfSize:14];
+    JYTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kJYTableViewCell];
+    if (cell == nil) {
+        cell = [[[NSBundle mainBundle] loadNibNamed:kJYTableViewCell owner:self options:nil] lastObject];
     }
     JYCellModel *model = self.languageList[indexPath.row];
     cell.accessoryType = model.enabled ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
-    cell.textLabel.text = model.title;
-
+    [cell resetWithData:model];
+    
     return cell;
 }
 
@@ -91,10 +87,10 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 
 #pragma mark - event & response
 - (void)rightBarButtonAction:(id)sender {
-    
     NSString *key = [self getCurrentKey];
     NSString *currentLanguage = [[JYLocalizedHelper standardHelper] currentLanguage];
     if (key && ![key isEqualToString:currentLanguage]) {
+        [self showHUD:JYLocalizedString(@"更换语言中...", nil)];
         @weakify(self);
         //这里延时是为了让用户觉得我们确实在费力的切换语言，不然很突兀
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -106,6 +102,7 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 
 #pragma mark - private methods
 - (void)changeLanguageForKey:(NSString *)key {
+    [self hideHUD];
     [[JYRouter router] popToRoot];
     [[JYLocalizedHelper standardHelper] setUserLanguage:key]; //将新的语言标示存入本地
     //延时操作，等POP动画结束
@@ -128,7 +125,7 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 #pragma mark - getter & setter
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, TOP_LAYOUT_GUIDE, SCREEN_WIDTH, SAFE_HEIGHT)];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
         _tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.dataSource = self;
@@ -142,7 +139,7 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
     if (!_languageList) {
         _languageList  = [NSMutableArray array];
         NSError *error = nil;
-        NSString *path = [JYBundle pathForResource:@"myAddress" ofType:@"json"];
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"languageList" ofType:@"json"];
         NSData *data   = [[NSData alloc] initWithContentsOfFile:path];
         NSArray *array = [NSJSONSerialization JSONObjectWithData:data
                                                          options:NSJSONReadingAllowFragments

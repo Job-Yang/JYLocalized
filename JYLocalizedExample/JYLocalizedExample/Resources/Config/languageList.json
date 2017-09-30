@@ -1,0 +1,22 @@
+[
+  {
+  "title": "简体中文",
+  "key": "zh-Hans",
+  "isSelected": false
+  },
+  {
+  "title": "繁體中文",
+  "key": "zh-Hant",
+  "isSelected": false
+  },
+  {
+  "title": "English",
+  "key": "en",
+  "isSelected": false
+  },
+  {
+ "title": "日本語",
+  "key": "ja",
+  "isSelected": false
+  }
+]

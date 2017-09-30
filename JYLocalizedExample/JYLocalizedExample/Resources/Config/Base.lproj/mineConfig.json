@@ -1,0 +1,17 @@
+[
+  {
+    "iconName": "mine_account_icon", 
+    "title": "我的信息", 
+    "selName": ""
+  }, 
+  {
+    "iconName": "mine_receiving_icon", 
+    "title": "我的收藏", 
+    "selName": ""
+  }, 
+  {
+    "iconName": "mine_invitation_icon", 
+    "title": "多语言", 
+    "selName": "jumpToMultiLanguageVC"
+  }
+]

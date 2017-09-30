@@ -14,8 +14,16 @@
 		B11B2EB51F7A3D9300D352B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B11B2EB41F7A3D9300D352B7 /* main.m */; };
 		B11B2EBE1F7A3E2700D352B7 /* JYLocalizedHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B11B2EBD1F7A3E2700D352B7 /* JYLocalizedHelper.m */; };
 		B11B2ECF1F7A83C200D352B7 /* JYTabBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B11B2EC71F7A83C100D352B7 /* JYTabBarManager.m */; };
-		B11B2ED01F7A83C200D352B7 /* JYPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = B11B2ECC1F7A83C200D352B7 /* JYPopView.m */; };
-		B11B2ED11F7A83C200D352B7 /* JYTabBarPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B11B2ECE1F7A83C200D352B7 /* JYTabBarPlusButton.m */; };
+		B1411DE61F7E485C005BFDD1 /* JYMineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1411DE51F7E485C005BFDD1 /* JYMineHeaderView.xib */; };
+		B1411DED1F7E53F1005BFDD1 /* UIViewController+JYHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B1411DEC1F7E53F1005BFDD1 /* UIViewController+JYHUD.m */; };
+		B143EE181F7F4C1B002DC1B1 /* JYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B143EE171F7F4C1B002DC1B1 /* JYBaseViewController.m */; };
+		B18BAE541F7E1B7F00E859BA /* JYPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = B18BAE4D1F7E1B7F00E859BA /* JYPopView.m */; };
+		B18BAE551F7E1B7F00E859BA /* JYTabBarPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B18BAE4F1F7E1B7F00E859BA /* JYTabBarPlusButton.m */; };
+		B18BAE561F7E1B7F00E859BA /* JYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B18BAE521F7E1B7F00E859BA /* JYTableViewCell.m */; };
+		B18BAE571F7E1B7F00E859BA /* JYTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B18BAE531F7E1B7F00E859BA /* JYTableViewCell.xib */; };
+		B18BAE5A1F7E1E2A00E859BA /* JYMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B18BAE591F7E1E2A00E859BA /* JYMineHeaderView.m */; };
+		B18BAE5E1F7E257500E859BA /* mineConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = B18BAE601F7E257500E859BA /* mineConfig.json */; };
+		B18BAE661F7E25DA00E859BA /* languageList.json in Resources */ = {isa = PBXBuildFile; fileRef = B18BAE651F7E25DA00E859BA /* languageList.json */; };
 		B18EB0CB1F7B87E800DF31E1 /* JYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18EB0C41F7B87E700DF31E1 /* JYNavigationController.m */; };
 		B18EB0CC1F7B87E800DF31E1 /* JYLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18EB0C81F7B87E700DF31E1 /* JYLanguageViewController.m */; };
 		B18EB0CF1F7B890D00DF31E1 /* JYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18EB0CE1F7B890D00DF31E1 /* JYHomeViewController.m */; };
@@ -38,10 +46,6 @@
 		B11B2EBD1F7A3E2700D352B7 /* JYLocalizedHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYLocalizedHelper.m; sourceTree = "<group>"; };
 		B11B2EC61F7A83C100D352B7 /* JYTabBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYTabBarManager.h; sourceTree = "<group>"; };
 		B11B2EC71F7A83C100D352B7 /* JYTabBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYTabBarManager.m; sourceTree = "<group>"; };
-		B11B2ECB1F7A83C200D352B7 /* JYPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYPopView.h; sourceTree = "<group>"; };
-		B11B2ECC1F7A83C200D352B7 /* JYPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYPopView.m; sourceTree = "<group>"; };
-		B11B2ECD1F7A83C200D352B7 /* JYTabBarPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYTabBarPlusButton.h; sourceTree = "<group>"; };
-		B11B2ECE1F7A83C200D352B7 /* JYTabBarPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYTabBarPlusButton.m; sourceTree = "<group>"; };
 		B11B2ED31F7B4ED600D352B7 /* JYMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYMacro.h; sourceTree = "<group>"; };
 		B11B2ED41F7B530D00D352B7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		B11B2ED51F7B530E00D352B7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -49,6 +53,26 @@
 		B11B2ED71F7B531900D352B7 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		B11B2ED81F7B532100D352B7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		B11B2ED91F7B532200D352B7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B1411DE51F7E485C005BFDD1 /* JYMineHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYMineHeaderView.xib; sourceTree = "<group>"; };
+		B1411DEB1F7E53F1005BFDD1 /* UIViewController+JYHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JYHUD.h"; sourceTree = "<group>"; };
+		B1411DEC1F7E53F1005BFDD1 /* UIViewController+JYHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JYHUD.m"; sourceTree = "<group>"; };
+		B143EE161F7F4C1B002DC1B1 /* JYBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYBaseViewController.h; sourceTree = "<group>"; };
+		B143EE171F7F4C1B002DC1B1 /* JYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYBaseViewController.m; sourceTree = "<group>"; };
+		B18BAE4C1F7E1B7F00E859BA /* JYPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYPopView.h; sourceTree = "<group>"; };
+		B18BAE4D1F7E1B7F00E859BA /* JYPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYPopView.m; sourceTree = "<group>"; };
+		B18BAE4E1F7E1B7F00E859BA /* JYTabBarPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYTabBarPlusButton.h; sourceTree = "<group>"; };
+		B18BAE4F1F7E1B7F00E859BA /* JYTabBarPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYTabBarPlusButton.m; sourceTree = "<group>"; };
+		B18BAE511F7E1B7F00E859BA /* JYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYTableViewCell.h; sourceTree = "<group>"; };
+		B18BAE521F7E1B7F00E859BA /* JYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYTableViewCell.m; sourceTree = "<group>"; };
+		B18BAE531F7E1B7F00E859BA /* JYTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JYTableViewCell.xib; sourceTree = "<group>"; };
+		B18BAE581F7E1E2A00E859BA /* JYMineHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYMineHeaderView.h; sourceTree = "<group>"; };
+		B18BAE591F7E1E2A00E859BA /* JYMineHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYMineHeaderView.m; sourceTree = "<group>"; };
+		B18BAE5F1F7E257500E859BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/mineConfig.json; sourceTree = "<group>"; };
+		B18BAE611F7E257600E859BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/mineConfig.json; sourceTree = "<group>"; };
+		B18BAE621F7E257700E859BA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "zh-Hans"; path = "zh-Hans.lproj/mineConfig.json"; sourceTree = "<group>"; };
+		B18BAE631F7E258000E859BA /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "zh-Hant"; path = "zh-Hant.lproj/mineConfig.json"; sourceTree = "<group>"; };
+		B18BAE641F7E258100E859BA /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ja; path = ja.lproj/mineConfig.json; sourceTree = "<group>"; };
+		B18BAE651F7E25DA00E859BA /* languageList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = languageList.json; sourceTree = "<group>"; };
 		B18EB0B81F7B763900DF31E1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B18EB0C31F7B87E700DF31E1 /* JYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYNavigationController.h; sourceTree = "<group>"; };
 		B18EB0C41F7B87E700DF31E1 /* JYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYNavigationController.m; sourceTree = "<group>"; };
@@ -122,11 +146,12 @@
 			children = (
 				B11B2EBB1F7A3E2700D352B7 /* JYLocalized */,
 				B18EB0E11F7B912400DF31E1 /* AppDelegate */,
-				B11B2EC51F7A83C100D352B7 /* Manager */,
-				B11B2ED21F7B4ED600D352B7 /* Marcos */,
 				B11B2EC81F7A83C100D352B7 /* ViewControllers */,
 				B11B2ECA1F7A83C200D352B7 /* Views */,
 				B11B2EC91F7A83C200D352B7 /* Models */,
+				B11B2EC51F7A83C100D352B7 /* Manager */,
+				B11B2ED21F7B4ED600D352B7 /* Marcos */,
+				B1411DE71F7E539B005BFDD1 /* Categories */,
 				B18EB0E51F7B91B500DF31E1 /* Utils */,
 				B18EB0E01F7B912400DF31E1 /* Resources */,
 				B11B2EAE1F7A3D9300D352B7 /* Assets.xcassets */,
@@ -160,6 +185,8 @@
 		B11B2EC81F7A83C100D352B7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B143EE161F7F4C1B002DC1B1 /* JYBaseViewController.h */,
+				B143EE171F7F4C1B002DC1B1 /* JYBaseViewController.m */,
 				B18EB0C61F7B87E700DF31E1 /* Language */,
 				B18EB0C21F7B87E700DF31E1 /* Navigation */,
 				B18EB0CA1F7B87E700DF31E1 /* Home */,
@@ -182,10 +209,8 @@
 		B11B2ECA1F7A83C200D352B7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B11B2ECB1F7A83C200D352B7 /* JYPopView.h */,
-				B11B2ECC1F7A83C200D352B7 /* JYPopView.m */,
-				B11B2ECD1F7A83C200D352B7 /* JYTabBarPlusButton.h */,
-				B11B2ECE1F7A83C200D352B7 /* JYTabBarPlusButton.m */,
+				B18BAE501F7E1B7F00E859BA /* Cell */,
+				B18BAE4B1F7E1B7F00E859BA /* View */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +221,48 @@
 				B11B2ED31F7B4ED600D352B7 /* JYMacro.h */,
 			);
 			path = Marcos;
+			sourceTree = "<group>";
+		};
+		B1411DE71F7E539B005BFDD1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B1411DEB1F7E53F1005BFDD1 /* UIViewController+JYHUD.h */,
+				B1411DEC1F7E53F1005BFDD1 /* UIViewController+JYHUD.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B18BAE4B1F7E1B7F00E859BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B18BAE4C1F7E1B7F00E859BA /* JYPopView.h */,
+				B18BAE4D1F7E1B7F00E859BA /* JYPopView.m */,
+				B18BAE4E1F7E1B7F00E859BA /* JYTabBarPlusButton.h */,
+				B18BAE4F1F7E1B7F00E859BA /* JYTabBarPlusButton.m */,
+				B18BAE581F7E1E2A00E859BA /* JYMineHeaderView.h */,
+				B18BAE591F7E1E2A00E859BA /* JYMineHeaderView.m */,
+				B1411DE51F7E485C005BFDD1 /* JYMineHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B18BAE501F7E1B7F00E859BA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B18BAE511F7E1B7F00E859BA /* JYTableViewCell.h */,
+				B18BAE521F7E1B7F00E859BA /* JYTableViewCell.m */,
+				B18BAE531F7E1B7F00E859BA /* JYTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B18BAE5B1F7E244E00E859BA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B18BAE651F7E25DA00E859BA /* languageList.json */,
+				B18BAE601F7E257500E859BA /* mineConfig.json */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		B18EB0C21F7B87E700DF31E1 /* Navigation */ = {
@@ -255,6 +322,7 @@
 		B18EB0E01F7B912400DF31E1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B18BAE5B1F7E244E00E859BA /* Config */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -320,6 +388,9 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"zh-Hant",
+				ja,
 			);
 			mainGroup = B11B2E991F7A3D9300D352B7;
 			productRefGroup = B11B2EA31F7A3D9300D352B7 /* Products */;
@@ -336,9 +407,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18BAE571F7E1B7F00E859BA /* JYTableViewCell.xib in Resources */,
 				B11B2EB21F7A3D9300D352B7 /* LaunchScreen.storyboard in Resources */,
 				B11B2EAF1F7A3D9300D352B7 /* Assets.xcassets in Resources */,
+				B18BAE5E1F7E257500E859BA /* mineConfig.json in Resources */,
 				B11B2EAD1F7A3D9300D352B7 /* Main.storyboard in Resources */,
+				B1411DE61F7E485C005BFDD1 /* JYMineHeaderView.xib in Resources */,
+				B18BAE661F7E25DA00E859BA /* languageList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,18 +476,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				B18EB0DF1F7B910000DF31E1 /* JYMineViewController.m in Sources */,
-				B11B2ED01F7A83C200D352B7 /* JYPopView.m in Sources */,
 				B18EB0D21F7B891D00DF31E1 /* JYFeedsViewController.m in Sources */,
+				B18BAE561F7E1B7F00E859BA /* JYTableViewCell.m in Sources */,
 				B11B2EBE1F7A3E2700D352B7 /* JYLocalizedHelper.m in Sources */,
 				B18EB0CF1F7B890D00DF31E1 /* JYHomeViewController.m in Sources */,
-				B11B2ED11F7A83C200D352B7 /* JYTabBarPlusButton.m in Sources */,
 				B18EB0CC1F7B87E800DF31E1 /* JYLanguageViewController.m in Sources */,
 				B18EB0E41F7B912400DF31E1 /* AppDelegate.m in Sources */,
 				B11B2EB51F7A3D9300D352B7 /* main.m in Sources */,
+				B18BAE541F7E1B7F00E859BA /* JYPopView.m in Sources */,
 				B18EB0CB1F7B87E800DF31E1 /* JYNavigationController.m in Sources */,
 				B18EB0DB1F7B8B6D00DF31E1 /* JYCellModel.m in Sources */,
+				B18BAE551F7E1B7F00E859BA /* JYTabBarPlusButton.m in Sources */,
+				B143EE181F7F4C1B002DC1B1 /* JYBaseViewController.m in Sources */,
+				B18BAE5A1F7E1E2A00E859BA /* JYMineHeaderView.m in Sources */,
 				B18EB0D51F7B892C00DF31E1 /* JYMessageViewController.m in Sources */,
 				B11B2ECF1F7A83C200D352B7 /* JYTabBarManager.m in Sources */,
+				B1411DED1F7E53F1005BFDD1 /* UIViewController+JYHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +518,18 @@
 				B11B2ED91F7B532200D352B7 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B18BAE601F7E257500E859BA /* mineConfig.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B18BAE5F1F7E257500E859BA /* Base */,
+				B18BAE611F7E257600E859BA /* en */,
+				B18BAE621F7E257700E859BA /* zh-Hans */,
+				B18BAE631F7E258000E859BA /* zh-Hant */,
+				B18BAE641F7E258100E859BA /* ja */,
+			);
+			name = mineConfig.json;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
