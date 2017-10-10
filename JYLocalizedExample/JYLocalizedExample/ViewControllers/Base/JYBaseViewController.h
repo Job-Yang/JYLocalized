@@ -10,4 +10,11 @@
 
 @interface JYBaseViewController : UIViewController
 
+/**
+ 设置当前VC标题
+
+ @param currentTitle 当前VC标题
+ */
+- (void)setCurrentTitle:(NSString *)currentTitle;
+
 @end

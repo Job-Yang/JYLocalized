@@ -15,6 +15,7 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 
 @interface JYLanguageViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) UIButton *saveButton;
 @property (strong, nonatomic) NSMutableArray<JYCellModel *> *languageList;
 @end
 
@@ -28,8 +29,9 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = JYLocalizedString(@"语言设置", nil);
+    [self setCurrentTitle:JYLocalizedString(@"语言设置", nil)];
     [self tableView];
+    [self saveButton];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -86,7 +88,7 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 #pragma mark - router
 
 #pragma mark - event & response
-- (void)rightBarButtonAction:(id)sender {
+- (void)saveButtonAction:(id)sender {
     NSString *key = [self getCurrentKey];
     NSString *currentLanguage = [[JYLocalizedHelper standardHelper] currentLanguage];
     if (key && ![key isEqualToString:currentLanguage]) {
@@ -125,7 +127,7 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 #pragma mark - getter & setter
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-40)];
         _tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.dataSource = self;
@@ -133,6 +135,21 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
         [self.view addSubview:_tableView];
     }
     return _tableView;
+}
+
+- (UIButton *)saveButton {
+    if (!_saveButton) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake(0, SCREEN_HEIGHT-40, SCREEN_WIDTH, 40);
+        [button setBackgroundColor:SELECTED_COLOR];
+        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [button setTitle:JYLocalizedString(@"切换语言", nil) forState:UIControlStateNormal];
+        button.titleLabel.font = [UIFont boldSystemFontOfSize:20];
+        [button addTarget:self action:@selector(saveButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+        _saveButton = button;
+        [self.view addSubview:_saveButton];
+    }
+    return _saveButton;
 }
 
 - (NSMutableArray<JYCellModel *> *)languageList {

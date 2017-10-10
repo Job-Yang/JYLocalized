@@ -75,7 +75,10 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 
 #pragma mark - event & response
 - (void)jumpToMultiLanguageVC {
-    [[JYRouter router] push:@"JYLanguageViewController"];
+    NSDictionary *params = @{
+                             @"hidesBottomBarWhenPushed" : @(YES),
+                             };
+    [[JYRouter router] push:@"JYLanguageViewController" animated:YES params:params];
 }
 
 #pragma mark - private methods
