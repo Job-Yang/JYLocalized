@@ -52,14 +52,12 @@
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectControl:(UIControl *)control {
     UIView *animationView;
     if ([control cyl_isTabButton]) {
-        //更改红标状态
         if ([[self cyl_tabBarController].selectedViewController cyl_isShowTabBadgePoint]) {
             [[self cyl_tabBarController].selectedViewController cyl_removeTabBadgePoint];
         }
         animationView = [control cyl_tabImageView];
     }
     
-    // 即使 PlusButton 也添加了点击事件，点击 PlusButton 后也会触发该代理方法。
     if ([control cyl_isPlusButton]) {
         UIButton *button = CYLExternPlusButton;
         animationView = button.imageView;
@@ -68,9 +66,6 @@
 }
 
 #pragma mark - private methods
-/**
- *   在`-setViewControllers:`之前设置TabBar的属性
- */
 - (void)customizeTabBarForController:(CYLTabBarController *)tabBarController {
     NSDictionary *dict1 = @{
                             CYLTabBarItemTitle : JYLocalizedString(@"首页", nil),
@@ -96,9 +91,6 @@
     tabBarController.tabBarItemsAttributes = tabBarItemsAttributes;
 }
 
-/**
- *  更多TabBar自定义设置：比如：tabBarItem 的选中和不选中文字和背景图片属性、tabbar 背景图片属性等等
- */
 - (void)customizeTabBarAppearance:(CYLTabBarController *)tabBarController {
     // 普通状态下的文字属性
     NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
@@ -125,7 +117,6 @@
     }
 }
 
-//缩放动画
 - (void)addScaleAnimationOnView:(UIView *)animationView repeatCount:(float)repeatCount {
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
     animation.keyPath = @"transform.scale";

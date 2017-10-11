@@ -12,8 +12,8 @@
 @interface JYPopView ()
 @property (strong, nonatomic) UIImageView *bgImageView;
 @property (strong, nonatomic) UIImageView *logoImageView;
-@property (strong, nonatomic) UIView *viewOne;
-@property (strong, nonatomic) UIView *viewTwo;
+@property (strong, nonatomic) UIView *starView;
+@property (strong, nonatomic) UIView *diamondView;
 @property (strong, nonatomic) UIButton *closeButton;
 @end
 
@@ -23,7 +23,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         self.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = [UIColor clearColor];
         [self setup];
     }
     return self;
@@ -31,8 +31,8 @@
 
 #pragma mark - setup methods
 - (void)setup {
-    [self addSubview:self.viewOne];
-    [self addSubview:self.viewTwo];
+    [self addSubview:self.starView];
+    [self addSubview:self.diamondView];
     [self addSubview:self.closeButton];
     [self insertSubview:self.bgImageView atIndex:0];
 }
@@ -64,7 +64,6 @@
                      } completion:^(BOOL finished) {
                          [self removeFromSuperview];
                      }];
-    
     POPSpringAnimation *scaleAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewScaleXY];
     scaleAnimation.fromValue = [NSValue valueWithCGPoint:CGPointMake(1.0, 1.0)];
     scaleAnimation.toValue   = [NSValue valueWithCGPoint:CGPointMake(0.4, 0.4)];
@@ -73,7 +72,7 @@
     [self pop_addAnimation:scaleAnimation forKey:@"scaleAnim"];
 }
 
-- (void)chooseSendType:(id)sender {
+- (void)viewAction:(id)sender {
     [self hide];
 }
 
@@ -98,7 +97,7 @@
     label.text = text;
     label.textAlignment = NSTextAlignmentCenter;
     label.font = [UIFont systemFontOfSize:14];
-    label.textColor = [UIColor grayColor];
+    label.textColor = [UIColor whiteColor];
     [view addSubview:label];
 
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -113,7 +112,7 @@
 - (UIImageView *)bgImageView {
     if (!_bgImageView) {
         UIImageView *imageView = [[UIImageView alloc] init];
-        imageView.image = IMG(@"");
+        imageView.image = IMG(@"pop_background_normal");
         imageView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
         imageView.contentMode = UIViewContentModeScaleAspectFill;
         _bgImageView = imageView;
@@ -121,37 +120,37 @@
     return _bgImageView;
 }
 
-- (UIView *)viewOne {
-    if (!_viewOne) {
+- (UIView *)starView {
+    if (!_starView) {
         CGFloat width = 65;
         UIView *view = [self setViewWithSize:CGSizeMake(width, width+30)
-                                   imageName:@"sendParcels_reservation_normal"
-                                        text:JYLocalizedString(@"页面A", nil)
-                                      action:@selector(chooseSendType:)];
+                                   imageName:@"pop_star_normal"
+                                        text:JYLocalizedString(@"功能A", nil)
+                                      action:@selector(viewAction:)];
         view.center = CGPointMake(self.frame.size.width/4*1, self.closeButton.frame.origin.y - width - 30);
-        _viewOne = view;
+        _starView = view;
     }
-    return _viewOne;
+    return _starView;
 }
 
-- (UIView *)viewTwo {
-    if (!_viewTwo) {
+- (UIView *)diamondView {
+    if (!_diamondView) {
         CGFloat width = 65;
         UIView *view = [self setViewWithSize:CGSizeMake(width, width+30)
-                                   imageName:@"sendParcels_dorpOf_normal"
-                                        text:JYLocalizedString(@"页面A", nil)
-                                      action:@selector(chooseSendType:)];
+                                   imageName:@"pop_diamond_normal"
+                                        text:JYLocalizedString(@"功能B", nil)
+                                      action:@selector(viewAction:)];
         view.center = CGPointMake(self.frame.size.width/4*3, self.closeButton.frame.origin.y - width - 30);
-        _viewTwo = view;
+        _diamondView = view;
     }
-    return _viewTwo;
+    return _diamondView;
 }
 
 - (UIButton *)closeButton {
     if (!_closeButton) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.frame = CGRectMake((self.frame.size.width-30)/2, self.frame.size.height - 70, 30, 30);
-        [button setImage:[UIImage imageNamed:@"view_close_normal"] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"pop_close_normal"] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(closeButtonAction) forControlEvents:UIControlEventTouchUpInside];
         _closeButton = button;
     }

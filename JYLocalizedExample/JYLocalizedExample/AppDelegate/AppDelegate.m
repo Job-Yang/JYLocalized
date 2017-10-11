@@ -19,6 +19,9 @@
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
     self.window.backgroundColor = [UIColor whiteColor];
+    if (@available(iOS 11.0, *)) {
+        [[UIScrollView appearance] setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+    }
     // 设置根视图
     [[JYTabBarManager manager] registerTabBar];
     [self.window setRootViewController:[JYTabBarManager manager].tabBarController];

@@ -20,13 +20,13 @@ NSString *const kUserLanguage = @"kUserLanguage";
 @implementation JYLocalizedHelper
 
 #pragma mark - life cycle
-+ (instancetype)standardHelper {
-    static JYLocalizedHelper *helper;
++ (instancetype)helper {
+    static JYLocalizedHelper *_helper;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        helper = [[JYLocalizedHelper alloc] init];
+        _helper = [[JYLocalizedHelper alloc] init];
     });
-    return helper;
+    return _helper;
 }
 
 - (instancetype)init {

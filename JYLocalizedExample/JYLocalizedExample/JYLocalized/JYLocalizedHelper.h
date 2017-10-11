@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 #define JYLocalizedString(key, comment) \
-        [[JYLocalizedHelper standardHelper] stringWithKey:key]
+        [[JYLocalizedHelper helper] stringWithKey:key]
 
-#define JYBundle [[JYLocalizedHelper standardHelper] bundle]
+#define JYBundle [[JYLocalizedHelper helper] bundle]
 
 FOUNDATION_EXPORT NSString *const kTableDefault;
 FOUNDATION_EXPORT NSString *const kTableCodeMapping;
@@ -23,7 +23,7 @@ FOUNDATION_EXPORT NSString *const kTableCodeMapping;
 
  @return JYLocalizedHelper类对象
  */
-+ (instancetype)standardHelper;
++ (instancetype)helper;
 
 /**
  当前bundle

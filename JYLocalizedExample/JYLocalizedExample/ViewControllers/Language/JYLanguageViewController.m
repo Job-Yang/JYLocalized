@@ -31,7 +31,6 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
     [super viewDidLoad];
     [self setCurrentTitle:JYLocalizedString(@"语言设置", nil)];
     [self tableView];
-    [self saveButton];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -90,7 +89,7 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 #pragma mark - event & response
 - (void)saveButtonAction:(id)sender {
     NSString *key = [self getCurrentKey];
-    NSString *currentLanguage = [[JYLocalizedHelper standardHelper] currentLanguage];
+    NSString *currentLanguage = [[JYLocalizedHelper helper] currentLanguage];
     if (key && ![key isEqualToString:currentLanguage]) {
         [self showHUD:JYLocalizedString(@"更换语言中...", nil)];
         @weakify(self);
@@ -106,7 +105,7 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 - (void)changeLanguageForKey:(NSString *)key {
     [self hideHUD];
     [[JYRouter router] popToRoot];
-    [[JYLocalizedHelper standardHelper] setUserLanguage:key]; //将新的语言标示存入本地
+    [[JYLocalizedHelper helper] setUserLanguage:key]; //将新的语言标示存入本地
     //延时操作，等POP动画结束
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [[NSNotificationCenter defaultCenter] postNotificationName:@"kNotifyRootViewControllerReset" object:nil];//发送刷新页面通知
@@ -127,9 +126,10 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 #pragma mark - getter & setter
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-40)];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SAFE_HEIGHT)];
         _tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.tableFooterView = self.saveButton;
         _tableView.dataSource = self;
         _tableView.delegate = self;
         [self.view addSubview:_tableView];
@@ -140,11 +140,11 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 - (UIButton *)saveButton {
     if (!_saveButton) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.frame = CGRectMake(0, SCREEN_HEIGHT-40, SCREEN_WIDTH, 40);
-        [button setBackgroundColor:SELECTED_COLOR];
-        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        button.frame = CGRectMake(0, 0, SCREEN_WIDTH, 60);
+        [button setBackgroundColor:[UIColor whiteColor]];
+        [button setTitleColor:RGB(130, 133, 139) forState:UIControlStateNormal];
         [button setTitle:JYLocalizedString(@"切换语言", nil) forState:UIControlStateNormal];
-        button.titleLabel.font = [UIFont boldSystemFontOfSize:20];
+        button.titleLabel.font = [UIFont boldSystemFontOfSize:16];
         [button addTarget:self action:@selector(saveButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         _saveButton = button;
         [self.view addSubview:_saveButton];
@@ -163,7 +163,7 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
                                                            error:&error];
         for (NSDictionary *dic in array) {
             JYCellModel *model = [JYCellModel yy_modelWithJSON:dic];
-            if ([model.key isEqualToString:[[JYLocalizedHelper standardHelper] currentLanguage]]) {
+            if ([model.key isEqualToString:[[JYLocalizedHelper helper] currentLanguage]]) {
                 model.enabled = YES;
             }
             [_languageList addObject:model];

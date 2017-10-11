@@ -50,10 +50,11 @@
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 #define IS_IPHONE_X (IS_IPHONE && SCREEN_HEIGHT == 812.0f)
-#define TOP_LAYOUT_GUIDE (IS_IPHONE_X ? 88.0 : 64.0)
+#define STATUS_BAR_HEIGHT (IS_IPHONE_X ? 44.0 : 20.0)
+#define NAVIGATION_BAR_HEIGHT 44.0
+#define TOP_LAYOUT_GUIDE (STATUS_BAR_HEIGHT + NAVIGATION_BAR_HEIGHT)
 #define BOTTOM_LAYOUT_GUIDE (IS_IPHONE_X ? 34.0 : 0.0)
 #define SAFE_HEIGHT (SCREEN_HEIGHT-TOP_LAYOUT_GUIDE-BOTTOM_LAYOUT_GUIDE)
-
 #define DEVICE_VERSION [[[UIDevice currentDevice] systemVersion] integerValue]
 
 #define IMG(name) [UIImage imageNamed:name]

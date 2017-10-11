@@ -15,6 +15,7 @@
 		B11B2EBE1F7A3E2700D352B7 /* JYLocalizedHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B11B2EBD1F7A3E2700D352B7 /* JYLocalizedHelper.m */; };
 		B11B2ECF1F7A83C200D352B7 /* JYTabBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B11B2EC71F7A83C100D352B7 /* JYTabBarManager.m */; };
 		B1411DED1F7E53F1005BFDD1 /* UIViewController+JYHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B1411DEC1F7E53F1005BFDD1 /* UIViewController+JYHUD.m */; };
+		B16EA4611F8D3BB000956451 /* pop_background_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = B16EA4631F8D3BB000956451 /* pop_background_normal.png */; };
 		B18BAE5E1F7E257500E859BA /* mineConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = B18BAE601F7E257500E859BA /* mineConfig.json */; };
 		B18BAE661F7E25DA00E859BA /* languageList.json in Resources */ = {isa = PBXBuildFile; fileRef = B18BAE651F7E25DA00E859BA /* languageList.json */; };
 		B18EB0CB1F7B87E800DF31E1 /* JYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18EB0C41F7B87E700DF31E1 /* JYNavigationController.m */; };
@@ -55,6 +56,11 @@
 		B11B2ED91F7B532200D352B7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		B1411DEB1F7E53F1005BFDD1 /* UIViewController+JYHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JYHUD.h"; sourceTree = "<group>"; };
 		B1411DEC1F7E53F1005BFDD1 /* UIViewController+JYHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JYHUD.m"; sourceTree = "<group>"; };
+		B16EA4621F8D3BB000956451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/pop_background_normal.png; sourceTree = "<group>"; };
+		B16EA4641F8D3BB200956451 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/pop_background_normal.png; sourceTree = "<group>"; };
+		B16EA4651F8D3BB300956451 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/pop_background_normal.png"; sourceTree = "<group>"; };
+		B16EA4661F8D3BB500956451 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hant"; path = "zh-Hant.lproj/pop_background_normal.png"; sourceTree = "<group>"; };
+		B16EA4671F8D3BB600956451 /* ja */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ja; path = ja.lproj/pop_background_normal.png; sourceTree = "<group>"; };
 		B18BAE5F1F7E257500E859BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/mineConfig.json; sourceTree = "<group>"; };
 		B18BAE611F7E257600E859BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/mineConfig.json; sourceTree = "<group>"; };
 		B18BAE621F7E257700E859BA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "zh-Hans"; path = "zh-Hans.lproj/mineConfig.json"; sourceTree = "<group>"; };
@@ -244,6 +250,7 @@
 		B18BAE5B1F7E244E00E859BA /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				B16EA4631F8D3BB000956451 /* pop_background_normal.png */,
 				B18BAE651F7E25DA00E859BA /* languageList.json */,
 				B18BAE601F7E257500E859BA /* mineConfig.json */,
 			);
@@ -625,6 +632,7 @@
 			files = (
 				B11B2EB21F7A3D9300D352B7 /* LaunchScreen.storyboard in Resources */,
 				B11B2EAF1F7A3D9300D352B7 /* Assets.xcassets in Resources */,
+				B16EA4611F8D3BB000956451 /* pop_background_normal.png in Resources */,
 				B18BAE5E1F7E257500E859BA /* mineConfig.json in Resources */,
 				B11B2EAD1F7A3D9300D352B7 /* Main.storyboard in Resources */,
 				B1E12A5A1F8B216C0025335B /* JYTableViewCell.xib in Resources */,
@@ -734,6 +742,18 @@
 				B11B2ED91F7B532200D352B7 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B16EA4631F8D3BB000956451 /* pop_background_normal.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B16EA4621F8D3BB000956451 /* Base */,
+				B16EA4641F8D3BB200956451 /* en */,
+				B16EA4651F8D3BB300956451 /* zh-Hans */,
+				B16EA4661F8D3BB500956451 /* zh-Hant */,
+				B16EA4671F8D3BB600956451 /* ja */,
+			);
+			name = pop_background_normal.png;
 			sourceTree = "<group>";
 		};
 		B18BAE601F7E257500E859BA /* mineConfig.json */ = {

@@ -27,7 +27,7 @@
     JYTabBarPlusButton *button = [[JYTabBarPlusButton alloc] init];
     UIImage *buttonImage = IMG(@"tabbar_plus_normal");
     [button setImage:buttonImage forState:UIControlStateNormal];
-    button.frame = CGRectMake(0.0, 0.0, 75, 75);
+    button.frame = CGRectMake(0.0, 0.0, 70, 70);
     button.backgroundColor = [UIColor clearColor];
     [button addTarget:button action:@selector(clickPublish) forControlEvents:UIControlEventTouchUpInside];
     return button;
