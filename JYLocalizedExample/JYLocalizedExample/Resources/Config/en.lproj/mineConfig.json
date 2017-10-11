@@ -1,17 +1,17 @@
  [
   {
   "iconName": "mine_info_icon",
-  "title": "我的信息",
+  "title": "Information",
   "selName": ""
   },
   {
   "iconName": "mine_collect_icon",
-  "title": "我的收藏",
+  "title": "Collection",
   "selName": ""
   },
   {
   "iconName": "mine_language_icon",
-  "title": "语言设置",
+  "title": "Language",
   "selName": "jumpToMultiLanguageVC"
   }
   ]

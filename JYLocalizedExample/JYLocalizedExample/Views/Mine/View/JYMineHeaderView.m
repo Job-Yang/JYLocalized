@@ -38,7 +38,7 @@
 #pragma mark - private methods
 - (void)setViewText {
     self.titleLabel.text = JYLocalizedString(@"Job-Yang", nil);
-    self.subTitleLabel.text = JYLocalizedString(@"Job-Yang", nil);
+    self.subTitleLabel.text = JYLocalizedString(@"查看并编辑个人资料", nil);
 }
 
 #pragma mark - getter & setter

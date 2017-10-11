@@ -7,31 +7,40 @@
 //
 
 #import "JYMessageViewController.h"
+#import "JYContentView.h"
 
 @interface JYMessageViewController ()
-
+@property (strong, nonatomic) JYContentView *contentView;
 @end
 
 @implementation JYMessageViewController
 
+#pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self contentView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - setup methods
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - requests
+
+#pragma mark - event & response
+
+#pragma mark - private methods
+
+#pragma mark - getter & setter
+- (JYContentView *)contentView {
+    if (!_contentView) {
+        _contentView = [[JYContentView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SAFE_HEIGHT+NAVIGATION_BAR_HEIGHT)];
+        [_contentView setViewContentWithBackground:@"message_background_normal" title:JYLocalizedString(@"消息", nil) detail:JYLocalizedString(@"这里是消息页", nil)];
+        [self.view addSubview:_contentView];
+    }
+    return _contentView;
 }
-*/
 
 @end

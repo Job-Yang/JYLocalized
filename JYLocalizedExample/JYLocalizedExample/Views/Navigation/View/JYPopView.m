@@ -112,7 +112,8 @@
 - (UIImageView *)bgImageView {
     if (!_bgImageView) {
         UIImageView *imageView = [[UIImageView alloc] init];
-        imageView.image = IMG(@"pop_background_normal");
+        NSString *path = [JYBundle pathForResource:@"pop_background_normal" ofType:@"png"];
+        imageView.image = [UIImage imageWithContentsOfFile:path];
         imageView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
         imageView.contentMode = UIViewContentModeScaleAspectFill;
         _bgImageView = imageView;
