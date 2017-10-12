@@ -15,6 +15,7 @@
 @property (strong, nonatomic) UIView *starView;
 @property (strong, nonatomic) UIView *diamondView;
 @property (strong, nonatomic) UIButton *closeButton;
+@property (strong, nonatomic) UIVisualEffectView *effectView;
 @end
 
 @implementation JYPopView
@@ -31,6 +32,7 @@
 
 #pragma mark - setup methods
 - (void)setup {
+//    [self insertSubview:self.effectView atIndex:0];
     [self addSubview:self.starView];
     [self addSubview:self.diamondView];
     [self addSubview:self.closeButton];
@@ -150,12 +152,24 @@
 - (UIButton *)closeButton {
     if (!_closeButton) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.frame = CGRectMake((self.frame.size.width-30)/2, self.frame.size.height - 70, 30, 30);
+        button.frame = CGRectMake((self.frame.size.width-40)/2, self.frame.size.height - 70, 40, 40);
         [button setImage:[UIImage imageNamed:@"pop_close_normal"] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(closeButtonAction) forControlEvents:UIControlEventTouchUpInside];
         _closeButton = button;
     }
     return _closeButton;
 }
+
+- (UIVisualEffectView *)effectView {
+    if (!_effectView) {
+        UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+        UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+        effectView.frame = self.bounds;
+        effectView.alpha = 0.99;
+        _effectView = effectView;
+    }
+    return _effectView;
+}
+
 
 @end

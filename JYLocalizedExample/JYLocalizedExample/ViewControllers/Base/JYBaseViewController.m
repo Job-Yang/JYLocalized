@@ -23,7 +23,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:animated];
-}
+}   
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
@@ -36,7 +36,7 @@
     titleButton.backgroundColor = [UIColor clearColor];
     titleButton.frame = CGRectMake(0, 0, 100, 50);
     [titleButton setTitle:currentTitle forState:UIControlStateNormal];
-    [titleButton.titleLabel setFont:[UIFont boldSystemFontOfSize:16]];
+    [titleButton.titleLabel setFont:[UIFont boldSystemFontOfSize:18]];
     [titleButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     titleButton.autoresizesSubviews = YES;
     self.navigationItem.titleView = (UIView *)titleButton;

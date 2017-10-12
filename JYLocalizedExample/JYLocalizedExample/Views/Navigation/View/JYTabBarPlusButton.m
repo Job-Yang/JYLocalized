@@ -38,7 +38,7 @@
 }
 
 + (CGFloat)constantOfPlusButtonCenterYOffsetForTabBarHeight:(CGFloat)tabBarHeight {
-    return IS_IPHONE_X ? -15 : 0;
+    return IS_IPHONE_X ? -13 : 0;
 }
 
 #pragma mark - Event Response
