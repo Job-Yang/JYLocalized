@@ -1,9 +1,9 @@
 //
 //  JYLanguageViewController.m
-//  360zebra
+//  JYLocalizedExample
 //
 //  Created by 杨权 on 2016/11/3.
-//  Copyright © 2016年 360zebra. All rights reserved.
+//  Copyright © 2016年 Job-Yang. All rights reserved.
 //
 
 #import "JYLanguageViewController.h"

@@ -1,9 +1,9 @@
 //
 //  JYPopView.m
-//  360zebra
+//  JYLocalizedExample
 //
 //  Created by 杨权 on 2017/6/27.
-//  Copyright © 2017年 360zebra. All rights reserved.
+//  Copyright © 2017年 Job-Yang. All rights reserved.
 //
 
 #import "JYPopView.h"

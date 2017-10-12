@@ -1,9 +1,9 @@
 //
 //  JYLocalizedHelper.m
-//  360zebra
+//  JYLocalizedExample
 //
 //  Created by 杨权 on 2016/11/2.
-//  Copyright © 2016年 360zebra. All rights reserved.
+//  Copyright © 2016年 Job-Yang. All rights reserved.
 //
 
 #import "JYLocalizedHelper.h"

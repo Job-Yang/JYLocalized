@@ -25,8 +25,8 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLE-dz-Fou">
-                    <rect key="frame" x="15" y="35" width="0.0" height="0.0"/>
-                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
+                    <rect key="frame" x="20" y="40" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
                     <color key="textColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -42,8 +42,8 @@
                 <constraint firstItem="JLC-Ry-9te" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ISK-2v-fBm"/>
                 <constraint firstItem="oGr-U1-i3l" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="NwL-dz-si2"/>
                 <constraint firstItem="JLC-Ry-9te" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Vj1-L2-x4I"/>
-                <constraint firstItem="eLE-dz-Fou" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="aQU-Yb-NeC"/>
-                <constraint firstItem="eLE-dz-Fou" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="dPC-pS-hiK"/>
+                <constraint firstItem="eLE-dz-Fou" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="aQU-Yb-NeC"/>
+                <constraint firstItem="eLE-dz-Fou" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="dPC-pS-hiK"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JLC-Ry-9te" secondAttribute="trailing" constant="20" id="mA2-j6-jaP"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oGr-U1-i3l" secondAttribute="trailing" id="xrw-Ti-grp"/>
                 <constraint firstAttribute="bottom" secondItem="oGr-U1-i3l" secondAttribute="bottom" id="zcw-io-cPH"/>

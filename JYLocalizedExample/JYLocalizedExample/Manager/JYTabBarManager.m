@@ -1,9 +1,9 @@
 //
 //  JYTabBarManager.m
-//  360zebra
+//  JYLocalizedExample
 //
 //  Created by 杨权 on 2017/7/31.
-//  Copyright © 2017年 360zebra. All rights reserved.
+//  Copyright © 2017年 Job-Yang. All rights reserved.
 //
 
 #import "JYTabBarManager.h"
