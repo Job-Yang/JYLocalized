@@ -5,7 +5,6 @@
 🌏  iOS localization/Internationalization and in-app switching language example.
 
 
-
 # Localization/Internationalization
 
 
