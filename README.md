@@ -13,7 +13,7 @@
 # In-app switching language
 
 In this example, In-app switching language typically has the following steps:
-![JYLocalized](https://github.com/Job-Yang/JYLocalized/blob/master/ScreenShots/FlowChart.png)
+![JYLocalized](https://github.com/Job-Yang/JYLocalized/blob/master/ScreenShots/FlowChart_EN.png)
 
 ### Key code 
 
@@ -80,7 +80,7 @@ JYLocalized is released under the MIT license. See LICENSE file for details.
 # 应用内切换语言
 
 在该示例中，应用中切换语言一般会经历以下几个步骤：
-![JYLocalized](https://github.com/Job-Yang/JYLocalized/blob/master/ScreenShots/FlowChart.png)
+![JYLocalized](https://github.com/Job-Yang/JYLocalized/blob/master/ScreenShots/FlowChart_CN.png)
 
 
 ### 关键代码 
