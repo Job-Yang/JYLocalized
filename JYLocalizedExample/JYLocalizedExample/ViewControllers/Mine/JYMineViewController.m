@@ -112,7 +112,7 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 - (NSArray<JYCellModel *> *)models {
     if (!_models) {
         NSError *error = nil;
-        NSString *path = [JYBundle pathForResource:@"mineConfig" ofType:@"json"];
+        NSString *path = [[NSBundle localizedBundle] pathForResource:@"mineConfig" ofType:@"json"];
         NSData *data = [[NSData alloc] initWithContentsOfFile:path];
         NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
         _models = [NSArray yy_modelArrayWithClass:[JYCellModel class] json:array];

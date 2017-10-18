@@ -114,7 +114,7 @@
 - (UIImageView *)bgImageView {
     if (!_bgImageView) {
         UIImageView *imageView = [[UIImageView alloc] init];
-        NSString *path = [JYBundle pathForResource:@"pop_background_normal" ofType:@"png"];
+        NSString *path = [[NSBundle localizedBundle] pathForResource:@"pop_background_normal" ofType:@"png"];
         imageView.image = [UIImage imageWithContentsOfFile:path];
         imageView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
         imageView.contentMode = UIViewContentModeScaleAspectFill;
@@ -128,7 +128,7 @@
         CGFloat width = 65;
         UIView *view = [self setViewWithSize:CGSizeMake(width, width+30)
                                    imageName:@"pop_star_normal"
-                                        text:JYLocalizedString(@"功能A", nil)
+                                        text:NSLocalizedString(@"功能A", nil)
                                       action:@selector(viewAction:)];
         view.center = CGPointMake(self.frame.size.width/4*1, self.closeButton.frame.origin.y - width - 30);
         _starView = view;
@@ -141,7 +141,7 @@
         CGFloat width = 65;
         UIView *view = [self setViewWithSize:CGSizeMake(width, width+30)
                                    imageName:@"pop_diamond_normal"
-                                        text:JYLocalizedString(@"功能B", nil)
+                                        text:NSLocalizedString(@"功能B", nil)
                                       action:@selector(viewAction:)];
         view.center = CGPointMake(self.frame.size.width/4*3, self.closeButton.frame.origin.y - width - 30);
         _diamondView = view;

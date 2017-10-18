@@ -68,22 +68,22 @@
 #pragma mark - private methods
 - (void)customizeTabBarForController:(CYLTabBarController *)tabBarController {
     NSDictionary *dict1 = @{
-                            CYLTabBarItemTitle : JYLocalizedString(@"首页", nil),
+                            CYLTabBarItemTitle : NSLocalizedString(@"首页", nil),
                             CYLTabBarItemImage : @"tabbar_home_normal",
                             CYLTabBarItemSelectedImage : @"tabbar_home_selected",
                             };
     NSDictionary *dict2 = @{
-                            CYLTabBarItemTitle : JYLocalizedString(@"动态", nil),
+                            CYLTabBarItemTitle : NSLocalizedString(@"动态", nil),
                             CYLTabBarItemImage : @"tabbar_feeds_normal",
                             CYLTabBarItemSelectedImage : @"tabbar_feeds_selected",
                             };
     NSDictionary *dict3 = @{
-                            CYLTabBarItemTitle : JYLocalizedString(@"消息", nil),
+                            CYLTabBarItemTitle : NSLocalizedString(@"消息", nil),
                             CYLTabBarItemImage : @"tabbar_message_normal",
                             CYLTabBarItemSelectedImage : @"tabbar_message_selected",
                             };
     NSDictionary *dict4 = @{
-                            CYLTabBarItemTitle : JYLocalizedString(@"我的", nil),
+                            CYLTabBarItemTitle : NSLocalizedString(@"我的", nil),
                             CYLTabBarItemImage : @"tabbar_mine_normal",
                             CYLTabBarItemSelectedImage : @"tabbar_mine_selected",
                             };

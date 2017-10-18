@@ -21,18 +21,18 @@ In this example, In-app switching language typically has the following steps:
 #### JYLanguageViewController.m
 ```Objective-C
 // Set new language
-[[JYLocalizedHelper helper] setUserLanguage:key];
+[[NSBundle localizedBundle] setUserLanguage:key];
 // send reload root viewController notification
 [[NSNotificationCenter defaultCenter] postNotificationName:@"kNotifyRootViewControllerReset" object:nil];
 ```
 
-#### JYLocalizedHelper.m
+#### NSBundle+JYLocalized.m
 ```Objective-C
 - (void)setUserLanguage:(NSString *)language {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *path = [[NSBundle mainBundle] pathForResource:language ofType:@"lproj"];
     // construct a new bundle
-    self.bundle = [NSBundle bundleWithPath:path];
+    [NSBundle setLocalizedBundle:[NSBundle bundleWithPath:path]];
     // Store new language tags locally
     [defaults setObject:language forKey:kUserLanguage];
     [defaults synchronize];
@@ -90,18 +90,18 @@ JYLocalized is released under the MIT license. See LICENSE file for details.
 #### JYLanguageViewController.m
 ```Objective-C
 // 设置新的语言标示
-[[JYLocalizedHelper helper] setUserLanguage:key];
+[[NSBundle localizedBundle] setUserLanguage:key];
 // 发送重新加载root viewController通知
 [[NSNotificationCenter defaultCenter] postNotificationName:@"kNotifyRootViewControllerReset" object:nil];
 ```
 
-#### JYLocalizedHelper.m
+#### NSBundle+JYLocalized.m
 ```Objective-C
 - (void)setUserLanguage:(NSString *)language {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *path = [[NSBundle mainBundle] pathForResource:language ofType:@"lproj"];
     // 构造新的bundle
-    self.bundle = [NSBundle bundleWithPath:path];
+    [NSBundle setLocalizedBundle:[NSBundle bundleWithPath:path]];
     // 将新的语言标示存入本地
     [defaults setObject:language forKey:kUserLanguage];
     [defaults synchronize];

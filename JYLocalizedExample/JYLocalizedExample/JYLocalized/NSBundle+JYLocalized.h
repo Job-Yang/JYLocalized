@@ -1,47 +1,33 @@
 //
-//  JYLocalizedHelper.h
+//  NSBundle+JYLocalized.h
 //  JYLocalizedExample
 //
-//  Created by 杨权 on 2016/11/2.
-//  Copyright © 2016年 Job-Yang. All rights reserved.
+//  Created by 杨权 on 2017/10/18.
+//  Copyright © 2017年 Job-Yang. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-#define JYLocalizedString(key, comment) \
-        [[JYLocalizedHelper helper] stringWithKey:key]
-
-#define JYBundle [[JYLocalizedHelper helper] bundle]
-
 FOUNDATION_EXPORT NSString *const kTableDefault;
 FOUNDATION_EXPORT NSString *const kTableCodeMapping;
 
-@interface JYLocalizedHelper : NSObject
+@interface NSBundle (JYLocalized)
 
 /**
- 单例
-
- @return JYLocalizedHelper类对象
+ 多语言Bundle
  */
-+ (instancetype)helper;
-
-/**
- 当前bundle
-
- @return bundle
- */
-- (NSBundle *)bundle;
+@property (class, readonly, strong) NSBundle *localizedBundle;
 
 /**
  用户选择的语言，如果用户没有选择，则返回系统默认语言
-
+ 
  @return 当前语言
  */
 - (NSString *)currentLanguage;
 
 /**
  设置语言
-
+ 
  @param language 语言
  */
 - (void)setUserLanguage:(NSString *)language;
@@ -65,5 +51,4 @@ FOUNDATION_EXPORT NSString *const kTableCodeMapping;
  */
 - (NSString *)stringWithKey:(NSString *)key
                       table:(NSString *)tableName;
-
 @end

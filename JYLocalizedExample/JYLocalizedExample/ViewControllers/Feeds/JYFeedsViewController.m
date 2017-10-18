@@ -37,7 +37,7 @@
 - (JYContentView *)contentView {
     if (!_contentView) {
         _contentView = [[JYContentView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SAFE_HEIGHT+NAVIGATION_BAR_HEIGHT)];
-        [_contentView setViewContentWithBackground:@"feeds_background_normal" title:JYLocalizedString(@"动态", nil) detail:JYLocalizedString(@"这里是动态页", nil)];
+        [_contentView setViewContentWithBackground:@"feeds_background_normal" title:NSLocalizedString(@"动态", nil) detail:NSLocalizedString(@"这里是动态页", nil)];
         [self.view addSubview:_contentView];
     }
     return _contentView;

@@ -12,7 +12,6 @@
 		B11B2EAF1F7A3D9300D352B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B11B2EAE1F7A3D9300D352B7 /* Assets.xcassets */; };
 		B11B2EB21F7A3D9300D352B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B11B2EB01F7A3D9300D352B7 /* LaunchScreen.storyboard */; };
 		B11B2EB51F7A3D9300D352B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B11B2EB41F7A3D9300D352B7 /* main.m */; };
-		B11B2EBE1F7A3E2700D352B7 /* JYLocalizedHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B11B2EBD1F7A3E2700D352B7 /* JYLocalizedHelper.m */; };
 		B11B2ECF1F7A83C200D352B7 /* JYTabBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B11B2EC71F7A83C100D352B7 /* JYTabBarManager.m */; };
 		B1411DED1F7E53F1005BFDD1 /* UIViewController+JYHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B1411DEC1F7E53F1005BFDD1 /* UIViewController+JYHUD.m */; };
 		B16EA4611F8D3BB000956451 /* pop_background_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = B16EA4631F8D3BB000956451 /* pop_background_normal.png */; };
@@ -36,6 +35,7 @@
 		B1E12A521F8B212D0025335B /* JYCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E12A4F1F8B212D0025335B /* JYCellModel.m */; };
 		B1E12A591F8B216C0025335B /* JYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E12A561F8B216C0025335B /* JYTableViewCell.m */; };
 		B1E12A5A1F8B216C0025335B /* JYTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1E12A571F8B216C0025335B /* JYTableViewCell.xib */; };
+		B1FA2B381F971F7600E25211 /* NSBundle+JYLocalized.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FA2B371F971F7600E25211 /* NSBundle+JYLocalized.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,8 +46,6 @@
 		B11B2EB11F7A3D9300D352B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B11B2EB31F7A3D9300D352B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B11B2EB41F7A3D9300D352B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B11B2EBC1F7A3E2700D352B7 /* JYLocalizedHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYLocalizedHelper.h; sourceTree = "<group>"; };
-		B11B2EBD1F7A3E2700D352B7 /* JYLocalizedHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYLocalizedHelper.m; sourceTree = "<group>"; };
 		B11B2EC61F7A83C100D352B7 /* JYTabBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYTabBarManager.h; sourceTree = "<group>"; };
 		B11B2EC71F7A83C100D352B7 /* JYTabBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYTabBarManager.m; sourceTree = "<group>"; };
 		B11B2ED31F7B4ED600D352B7 /* JYMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYMacro.h; sourceTree = "<group>"; };
@@ -107,6 +105,8 @@
 		B1E12A551F8B216C0025335B /* JYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYTableViewCell.h; sourceTree = "<group>"; };
 		B1E12A561F8B216C0025335B /* JYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYTableViewCell.m; sourceTree = "<group>"; };
 		B1E12A571F8B216C0025335B /* JYTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JYTableViewCell.xib; sourceTree = "<group>"; };
+		B1FA2B361F971F7600E25211 /* NSBundle+JYLocalized.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+JYLocalized.h"; sourceTree = "<group>"; };
+		B1FA2B371F971F7600E25211 /* NSBundle+JYLocalized.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+JYLocalized.m"; sourceTree = "<group>"; };
 		B68FF1C3FA3E8934659EFB4D /* libPods-JYLocalizedExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JYLocalizedExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E2C97B08B67CECC0144FAD /* Pods-JYLocalizedExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYLocalizedExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYLocalizedExample/Pods-JYLocalizedExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,8 +185,8 @@
 		B11B2EBB1F7A3E2700D352B7 /* JYLocalized */ = {
 			isa = PBXGroup;
 			children = (
-				B11B2EBC1F7A3E2700D352B7 /* JYLocalizedHelper.h */,
-				B11B2EBD1F7A3E2700D352B7 /* JYLocalizedHelper.m */,
+				B1FA2B361F971F7600E25211 /* NSBundle+JYLocalized.h */,
+				B1FA2B371F971F7600E25211 /* NSBundle+JYLocalized.m */,
 			);
 			path = JYLocalized;
 			sourceTree = "<group>";
@@ -719,7 +719,6 @@
 				B1E12A591F8B216C0025335B /* JYTableViewCell.m in Sources */,
 				B18EB0DF1F7B910000DF31E1 /* JYMineViewController.m in Sources */,
 				B18EB0D21F7B891D00DF31E1 /* JYFeedsViewController.m in Sources */,
-				B11B2EBE1F7A3E2700D352B7 /* JYLocalizedHelper.m in Sources */,
 				B18EB0CF1F7B890D00DF31E1 /* JYHomeViewController.m in Sources */,
 				B1742B3F1F8DE90A00A24664 /* JYContentView.m in Sources */,
 				B18EB0CC1F7B87E800DF31E1 /* JYLanguageViewController.m in Sources */,
@@ -728,6 +727,7 @@
 				B18EB0CB1F7B87E800DF31E1 /* JYNavigationController.m in Sources */,
 				B1E12A431F8B1E620025335B /* JYMineHeaderView.m in Sources */,
 				B1E12A521F8B212D0025335B /* JYCellModel.m in Sources */,
+				B1FA2B381F971F7600E25211 /* NSBundle+JYLocalized.m in Sources */,
 				B18EB0D51F7B892C00DF31E1 /* JYMessageViewController.m in Sources */,
 				B1E12A481F8B205F0025335B /* JYBaseViewController.m in Sources */,
 				B1E12A401F8B1E620025335B /* JYTabBarPlusButton.m in Sources */,

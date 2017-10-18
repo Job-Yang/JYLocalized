@@ -29,7 +29,7 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setCurrentTitle:JYLocalizedString(@"语言设置", nil)];
+    [self setCurrentTitle:NSLocalizedString(@"语言设置", nil)];
     [self tableView];
 }
 
@@ -89,9 +89,9 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 #pragma mark - event & response
 - (void)saveButtonAction:(id)sender {
     NSString *key = [self getCurrentKey];
-    NSString *currentLanguage = [[JYLocalizedHelper helper] currentLanguage];
+    NSString *currentLanguage = [[NSBundle localizedBundle] currentLanguage];
     if (key && ![key isEqualToString:currentLanguage]) {
-        [self showHUD:JYLocalizedString(@"更换语言中...", nil)];
+        [self showHUD:NSLocalizedString(@"更换语言中...", nil)];
         @weakify(self);
         //这里延时是为了让用户觉得我们确实在费力的切换语言，不然很突兀
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -105,7 +105,7 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
 - (void)changeLanguageForKey:(NSString *)key {
     [self hideHUD];
     [[JYRouter router] popToRoot];
-    [[JYLocalizedHelper helper] setUserLanguage:key]; //将新的语言标示存入本地
+    [[NSBundle localizedBundle] setUserLanguage:key]; //将新的语言标示存入本地
     //延时操作，等POP动画结束
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [[NSNotificationCenter defaultCenter] postNotificationName:@"kNotifyRootViewControllerReset" object:nil];//发送刷新页面通知
@@ -143,7 +143,7 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
         button.frame = CGRectMake(0, 0, SCREEN_WIDTH, 60);
         [button setBackgroundColor:[UIColor whiteColor]];
         [button setTitleColor:RGB(130, 133, 139) forState:UIControlStateNormal];
-        [button setTitle:JYLocalizedString(@"切换语言", nil) forState:UIControlStateNormal];
+        [button setTitle:NSLocalizedString(@"切换语言", nil) forState:UIControlStateNormal];
         button.titleLabel.font = [UIFont boldSystemFontOfSize:16];
         [button addTarget:self action:@selector(saveButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         _saveButton = button;
@@ -163,7 +163,7 @@ static NSString *const kJYTableViewCell = @"JYTableViewCell";
                                                            error:&error];
         for (NSDictionary *dic in array) {
             JYCellModel *model = [JYCellModel yy_modelWithJSON:dic];
-            if ([model.key isEqualToString:[[JYLocalizedHelper helper] currentLanguage]]) {
+            if ([model.key isEqualToString:[[NSBundle localizedBundle] currentLanguage]]) {
                 model.enabled = YES;
             }
             [_languageList addObject:model];

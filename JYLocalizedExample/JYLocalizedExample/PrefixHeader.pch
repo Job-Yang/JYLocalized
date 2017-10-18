@@ -10,7 +10,7 @@
 #define PrefixHeader_pch
 
 #import "JYMacro.h"
-#import "JYLocalizedHelper.h"
+#import "NSBundle+JYLocalized.h"
 #import "JYRouter.h"
 #import "YYModel.h"
 

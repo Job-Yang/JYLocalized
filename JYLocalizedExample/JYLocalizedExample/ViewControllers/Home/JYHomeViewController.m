@@ -37,7 +37,7 @@
 - (JYContentView *)contentView {
     if (!_contentView) {
         _contentView = [[JYContentView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SAFE_HEIGHT+NAVIGATION_BAR_HEIGHT)];
-        [_contentView setViewContentWithBackground:@"home_background_normal" title:JYLocalizedString(@"首页", nil) detail:JYLocalizedString(@"这里是首页", nil)];
+        [_contentView setViewContentWithBackground:@"home_background_normal" title:NSLocalizedString(@"首页", nil) detail:NSLocalizedString(@"这里是首页", nil)];
         [self.view addSubview:_contentView];
     }
     return _contentView;
