@@ -1,8 +1,16 @@
 # JYLocalized
 
+
+[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/Job-Yang/JYLocalized/master/LICENSE) 
+[![CocoaPods](http://img.shields.io/cocoapods/v/JYLocalized.svg?style=flat)](http://cocoapods.org/?q=JYLocalized) 
+[![CocoaPods](http://img.shields.io/cocoapods/p/JYLocalizedsvg?style=flat)](http://cocoapods.org/?q=JYLocalized) 
+[![Support](https://img.shields.io/badge/support-iOS%208%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/) 
+🌏  iOS localization/Internationalization and in-app switching language example.
+
+
+
 ![JYLocalized](https://github.com/Job-Yang/JYLocalized/blob/master/ScreenShots/Demonstration.gif)
 
-🌏  iOS localization/Internationalization and in-app switching language example.
 
 
 # Localization/Internationalization
